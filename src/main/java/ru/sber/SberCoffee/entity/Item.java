@@ -14,7 +14,6 @@ public class Item {
     @Id
     private int id;
     private String name;
-    private double basePrice;
-
+    private double price;
 
 }
