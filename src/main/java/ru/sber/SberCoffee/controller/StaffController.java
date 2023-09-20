@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import ru.sber.SberCoffee.dto.StaffDTO;
 import ru.sber.SberCoffee.entity.Position;
 import ru.sber.SberCoffee.entity.Staff;
 import ru.sber.SberCoffee.repository.StaffRepo;
@@ -40,7 +41,10 @@ public class StaffController {
         }
 
         Staff createdStaff = staffService.createStaff(staff);
-        return ResponseEntity.status(HttpStatus.CREATED).body(createdStaff);
+
+        StaffDTO staffDTO = mapStaffToStaffDTO(createdStaff);
+        staffDTO.setReportTo(staffService.getStaffById(createdStaff.getId()).get());
+        return ResponseEntity.status(HttpStatus.CREATED).body(staffDTO);
     }
 
     @PutMapping("/{id}")
@@ -64,4 +68,16 @@ public class StaffController {
         return deleted ? ResponseEntity.noContent().build() : ResponseEntity.notFound().build();
     }
 
+    private StaffDTO mapStaffToStaffDTO(Staff staff) {
+        return new StaffDTO(
+                staff.getId(),
+                staff.getName(),
+                staff.getSurname(),
+                staff.getPatronymic(),
+                staff.getPosition(),
+                staff.getReportTo(),
+                staff.getPhoneNumber(),
+                staff.getAddress()
+        );
+    }
 }
