@@ -1,4 +1,4 @@
-package ru.sber.SberCoffee.model;
+package ru.sber.SberCoffee.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -15,4 +15,6 @@ public class Item {
     private int id;
     private String name;
     private double basePrice;
+
+
 }

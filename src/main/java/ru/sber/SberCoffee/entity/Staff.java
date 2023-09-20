@@ -1,4 +1,4 @@
-package ru.sber.SberCoffee.model;
+package ru.sber.SberCoffee.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

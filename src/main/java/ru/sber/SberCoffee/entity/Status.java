@@ -1,4 +1,4 @@
-package ru.sber.SberCoffee.model;
+package ru.sber.SberCoffee.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -10,9 +10,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Position {
+public class Status {
     @Id
     private int id;
     private String name;
-    private String description;
 }
