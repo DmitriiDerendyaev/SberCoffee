@@ -4,15 +4,15 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ru.sber.SberCoffee.dto.StaffDTO;
+import ru.sber.SberCoffee.dto.StaffResponseDTO;
 import ru.sber.SberCoffee.entity.Position;
 import ru.sber.SberCoffee.entity.Staff;
-import ru.sber.SberCoffee.repository.StaffRepo;
 import ru.sber.SberCoffee.service.PositionService;
 import ru.sber.SberCoffee.service.StaffService;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/staff")
@@ -23,40 +23,52 @@ public class StaffController {
     private final PositionService positionService;
 
     @GetMapping
-    public List<Staff> getAllStaff() {
-        return staffService.getAllStaff();
+    public ResponseEntity<List<StaffResponseDTO>> getAllStaff() {
+        List<Staff> staffList = staffService.getAllStaff();
+        if (staffList.isEmpty()) {
+            return ResponseEntity.notFound().build();
+        }
+
+        List<StaffResponseDTO> responseDTOList = staffList.stream()
+                .map(this::mapStaffToStaffDTO)
+                .collect(Collectors.toList());
+
+        return ResponseEntity.ok(responseDTOList);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Staff> getStaffById(@PathVariable int id) {
-        Optional<Staff> staff = staffService.getStaffById(id);
-        return staff.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
+    public ResponseEntity<StaffResponseDTO> getStaffById(@PathVariable int id) {
+        Optional<Staff> staffOptional = staffService.getStaffById(id);
+
+        if (staffOptional.isPresent()) {
+            StaffResponseDTO responseDTO = mapStaffToStaffDTO(staffOptional.get());
+            return ResponseEntity.ok(responseDTO);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 
     @PostMapping
-    public ResponseEntity<?> createStaff(@RequestBody Staff staff) {
-        Optional<Position> position = positionService.getPositionById(staff.getPosition().getId());
-        if (position.isEmpty()) {
-            return ResponseEntity.badRequest().body("Position with id " + staff.getPosition().getId() + " does not exist.");
+    public ResponseEntity<StaffResponseDTO> createStaff(@RequestBody Staff staff) {
+        if (staff == null) {
+            return ResponseEntity.badRequest().build();
         }
 
         Staff createdStaff = staffService.createStaff(staff);
-
-        StaffDTO staffDTO = mapStaffToStaffDTO(createdStaff);
-        staffDTO.setReportTo(staffService.getStaffById(createdStaff.getId()).get());
-        return ResponseEntity.status(HttpStatus.CREATED).body(staffDTO);
+        StaffResponseDTO responseDTO = mapStaffToStaffDTO(createdStaff);
+        return ResponseEntity.status(HttpStatus.CREATED).body(responseDTO);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<?> updateStaff(@PathVariable int id, @RequestBody Staff newStaff) {
-        Optional<Position> position = positionService.getPositionById(newStaff.getPosition().getId());
-        if (position.isEmpty()) {
-            return ResponseEntity.badRequest().body("Position with id " + newStaff.getPosition().getId() + " does not exist.");
+    public ResponseEntity<StaffResponseDTO> updateStaff(@PathVariable int id, @RequestBody Staff newStaff) {
+        if (newStaff == null) {
+            return ResponseEntity.badRequest().build();
         }
 
         Staff updatedStaff = staffService.updateStaff(id, newStaff);
         if (updatedStaff != null) {
-            return ResponseEntity.ok(updatedStaff);
+            StaffResponseDTO responseDTO = mapStaffToStaffDTO(updatedStaff);
+            return ResponseEntity.ok(responseDTO);
         } else {
             return ResponseEntity.notFound().build();
         }
@@ -65,17 +77,20 @@ public class StaffController {
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteStaff(@PathVariable int id) {
         boolean deleted = staffService.deleteStaff(id);
-        return deleted ? ResponseEntity.noContent().build() : ResponseEntity.notFound().build();
+        if (deleted) {
+            return ResponseEntity.noContent().build();
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 
-    private StaffDTO mapStaffToStaffDTO(Staff staff) {
-        return new StaffDTO(
+    private StaffResponseDTO mapStaffToStaffDTO(Staff staff) {
+        return new StaffResponseDTO(
                 staff.getId(),
                 staff.getName(),
                 staff.getSurname(),
                 staff.getPatronymic(),
-                staff.getPosition(),
-                staff.getReportTo(),
+                staff.getPosition().getName(),
                 staff.getPhoneNumber(),
                 staff.getAddress()
         );

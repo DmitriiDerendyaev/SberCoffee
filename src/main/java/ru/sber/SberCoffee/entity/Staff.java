@@ -16,15 +16,9 @@ public class Staff {
     private String name;
     private String surname;
     private String patronymic;
-
     @ManyToOne
     @JoinColumn(name = "position")
     private Position position;
-
-    @ManyToOne
-    @JoinColumn(name = "report_to")
-    private Staff reportTo;
-
     private String phoneNumber;
     private String address;
 }
