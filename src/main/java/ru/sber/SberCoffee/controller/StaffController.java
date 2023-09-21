@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import ru.sber.SberCoffee.dto.StaffRequestDTO;
 import ru.sber.SberCoffee.dto.StaffResponseDTO;
 import ru.sber.SberCoffee.entity.Position;
 import ru.sber.SberCoffee.entity.Staff;
@@ -49,10 +50,23 @@ public class StaffController {
     }
 
     @PostMapping
-    public ResponseEntity<StaffResponseDTO> createStaff(@RequestBody Staff staff) {
-        if (staff == null) {
+    public ResponseEntity<StaffResponseDTO> createStaff(@RequestBody StaffRequestDTO staffRequestDTO) {
+        if (staffRequestDTO == null) {
             return ResponseEntity.badRequest().build();
         }
+
+        Optional<Position> position = positionService.getPositionById(staffRequestDTO.getPosition());
+        if (position == null) {
+            return ResponseEntity.badRequest().build();
+        }
+
+        Staff staff = new Staff();
+        staff.setName(staffRequestDTO.getName());
+        staff.setSurname(staffRequestDTO.getSurname());
+        staff.setPatronymic(staffRequestDTO.getPatronymic());
+        staff.setPosition(position.get());
+        staff.setPhoneNumber(staffRequestDTO.getPhoneNumber());
+        staff.setAddress(staffRequestDTO.getAddress());
 
         Staff createdStaff = staffService.createStaff(staff);
         StaffResponseDTO responseDTO = mapStaffToStaffDTO(createdStaff);
@@ -60,10 +74,24 @@ public class StaffController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<StaffResponseDTO> updateStaff(@PathVariable int id, @RequestBody Staff newStaff) {
-        if (newStaff == null) {
+    public ResponseEntity<StaffResponseDTO> updateStaff(@PathVariable int id, @RequestBody StaffRequestDTO staffRequestDTO) {
+        if (staffRequestDTO == null) {
             return ResponseEntity.badRequest().build();
         }
+
+        // Здесь вы можете получить объект Position по ID из staffRequestDTO.position
+        Optional<Position> position = positionService.getPositionById(staffRequestDTO.getPosition());
+        if (position == null) {
+            return ResponseEntity.badRequest().build(); // Вернуть ошибку, если должность не найдена
+        }
+
+        Staff newStaff = new Staff();
+        newStaff.setName(staffRequestDTO.getName());
+        newStaff.setSurname(staffRequestDTO.getSurname());
+        newStaff.setPatronymic(staffRequestDTO.getPatronymic());
+        newStaff.setPosition(position.get());
+        newStaff.setPhoneNumber(staffRequestDTO.getPhoneNumber());
+        newStaff.setAddress(staffRequestDTO.getAddress());
 
         Staff updatedStaff = staffService.updateStaff(id, newStaff);
         if (updatedStaff != null) {
