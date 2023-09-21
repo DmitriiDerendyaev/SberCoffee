@@ -60,13 +60,14 @@ public class StaffController {
             return ResponseEntity.badRequest().build();
         }
 
-        Staff staff = new Staff();
-        staff.setName(staffRequestDTO.getName());
-        staff.setSurname(staffRequestDTO.getSurname());
-        staff.setPatronymic(staffRequestDTO.getPatronymic());
-        staff.setPosition(position.get());
-        staff.setPhoneNumber(staffRequestDTO.getPhoneNumber());
-        staff.setAddress(staffRequestDTO.getAddress());
+        Staff staff = Staff.builder()
+                .name(staffRequestDTO.getName())
+                .surname(staffRequestDTO.getSurname())
+                .patronymic(staffRequestDTO.getPatronymic())
+                .position(position.orElse(null))
+                .phoneNumber(staffRequestDTO.getPhoneNumber())
+                .address(staffRequestDTO.getAddress())
+                .build();
 
         Staff createdStaff = staffService.createStaff(staff);
         StaffResponseDTO responseDTO = mapStaffToStaffDTO(createdStaff);
@@ -79,19 +80,19 @@ public class StaffController {
             return ResponseEntity.badRequest().build();
         }
 
-        // Здесь вы можете получить объект Position по ID из staffRequestDTO.position
         Optional<Position> position = positionService.getPositionById(staffRequestDTO.getPosition());
         if (position == null) {
-            return ResponseEntity.badRequest().build(); // Вернуть ошибку, если должность не найдена
+            return ResponseEntity.badRequest().build();
         }
 
-        Staff newStaff = new Staff();
-        newStaff.setName(staffRequestDTO.getName());
-        newStaff.setSurname(staffRequestDTO.getSurname());
-        newStaff.setPatronymic(staffRequestDTO.getPatronymic());
-        newStaff.setPosition(position.get());
-        newStaff.setPhoneNumber(staffRequestDTO.getPhoneNumber());
-        newStaff.setAddress(staffRequestDTO.getAddress());
+        Staff newStaff = Staff.builder()
+                .name(staffRequestDTO.getName())
+                .surname(staffRequestDTO.getSurname())
+                .patronymic(staffRequestDTO.getPatronymic())
+                .position(position.orElse(null))
+                .phoneNumber(staffRequestDTO.getPhoneNumber())
+                .address(staffRequestDTO.getAddress())
+                .build();
 
         Staff updatedStaff = staffService.updateStaff(id, newStaff);
         if (updatedStaff != null) {
