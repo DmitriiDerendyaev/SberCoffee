@@ -6,9 +6,9 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class CoffeeOrderRequestDTO {
-    private Long clientId;
-    private Long itemId;
+    private Long client;
+    private Long item;
     private int quantity;
-    private Long statusId;
-    private Long staffId;
+    private int status;
+    private int staff;
 }
