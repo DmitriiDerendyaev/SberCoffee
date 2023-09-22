@@ -9,6 +9,9 @@ import ru.sber.SberCoffee.service.StaffService;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * The type Staff service.
+ */
 @Service
 @RequiredArgsConstructor
 public class StaffServiceImpl implements StaffService {

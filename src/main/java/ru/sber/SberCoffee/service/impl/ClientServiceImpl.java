@@ -12,6 +12,9 @@ import ru.sber.SberCoffee.service.ClientService;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * The type Client service.
+ */
 @Service
 @RequiredArgsConstructor
 public class ClientServiceImpl implements ClientService {

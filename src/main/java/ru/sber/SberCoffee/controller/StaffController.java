@@ -17,6 +17,9 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+/**
+ * The type Staff controller.
+ */
 @Slf4j
 @RestController
 @RequestMapping("/staff")
@@ -26,6 +29,11 @@ public class StaffController {
     private final StaffService staffService;
     private final PositionService positionService;
 
+    /**
+     * Gets all staff.
+     *
+     * @return the all staff
+     */
     @GetMapping
     public ResponseEntity<List<StaffResponseDTO>> getAllStaff() {
         List<Staff> staffList = staffService.getAllStaff();
@@ -42,6 +50,12 @@ public class StaffController {
         return ResponseEntity.ok(responseDTOList);
     }
 
+    /**
+     * Gets staff by id.
+     *
+     * @param id the id
+     * @return the staff by id
+     */
     @GetMapping("/{id}")
     public ResponseEntity<StaffResponseDTO> getStaffById(@PathVariable int id) {
         Optional<Staff> staffOptional = staffService.getStaffById(id);
@@ -56,6 +70,12 @@ public class StaffController {
         }
     }
 
+    /**
+     * Create staff response entity.
+     *
+     * @param staffRequestDTO the staff request dto
+     * @return the response entity
+     */
     @PostMapping
     public ResponseEntity<StaffResponseDTO> createStaff(@Valid @RequestBody StaffRequestDTO staffRequestDTO) {
         if (staffRequestDTO == null) {
@@ -85,6 +105,13 @@ public class StaffController {
         return ResponseEntity.status(HttpStatus.CREATED).body(responseDTO);
     }
 
+    /**
+     * Update staff response entity.
+     *
+     * @param id              the id
+     * @param staffRequestDTO the staff request dto
+     * @return the response entity
+     */
     @PutMapping("/{id}")
     public ResponseEntity<StaffResponseDTO> updateStaff(@PathVariable int id, @Valid @RequestBody StaffRequestDTO staffRequestDTO) {
         if (staffRequestDTO == null) {
@@ -119,6 +146,12 @@ public class StaffController {
         }
     }
 
+    /**
+     * Delete staff response entity.
+     *
+     * @param id the id
+     * @return the response entity
+     */
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteStaff(@PathVariable int id) {
         boolean deleted = staffService.deleteStaff(id);

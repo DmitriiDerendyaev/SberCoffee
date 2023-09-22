@@ -10,6 +10,9 @@ import ru.sber.SberCoffee.service.PositionService;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * The type Position service.
+ */
 @Service
 @RequiredArgsConstructor
 public class PositionServiceImpl implements PositionService {

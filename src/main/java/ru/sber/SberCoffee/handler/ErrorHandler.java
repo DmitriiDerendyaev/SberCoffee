@@ -11,16 +11,31 @@ import org.springframework.web.method.annotation.MethodArgumentTypeMismatchExcep
 
 import java.util.Map;
 
+/**
+ * The type Error handler.
+ */
 @Slf4j
 @RestControllerAdvice("ru.sber.SberCoffee.controller")
 public class ErrorHandler {
 
+    /**
+     * Handle method argument type mismatch response entity.
+     *
+     * @param ex the ex
+     * @return the response entity
+     */
     @ExceptionHandler(MethodArgumentTypeMismatchException.class)
     public ResponseEntity<String> handleMethodArgumentTypeMismatch(MethodArgumentTypeMismatchException ex) {
         String message = "Invalid parameter type: " + ex.getName();
         return new ResponseEntity<>(message, HttpStatus.BAD_REQUEST);
     }
 
+    /**
+     * Invalid path variable exception map.
+     *
+     * @param e the e
+     * @return the map
+     */
     @ExceptionHandler(MethodArgumentNotValidException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public Map<String, String> invalidPathVariableException(final Exception e) {

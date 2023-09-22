@@ -8,6 +8,9 @@ import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+/**
+ * The type Coffee order.
+ */
 @Entity
 @Data
 @AllArgsConstructor

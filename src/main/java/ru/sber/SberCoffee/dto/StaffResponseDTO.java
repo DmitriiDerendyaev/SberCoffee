@@ -4,6 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
+/**
+ * The type Staff response dto.
+ */
 @Data
 @AllArgsConstructor
 @RequiredArgsConstructor

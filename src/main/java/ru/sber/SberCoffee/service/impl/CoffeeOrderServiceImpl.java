@@ -10,6 +10,9 @@ import ru.sber.SberCoffee.service.CoffeeOrderService;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * The type Coffee order service.
+ */
 @Service
 @RequiredArgsConstructor
 public class CoffeeOrderServiceImpl implements CoffeeOrderService {

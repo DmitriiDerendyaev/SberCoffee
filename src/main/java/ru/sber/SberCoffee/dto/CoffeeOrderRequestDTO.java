@@ -5,6 +5,9 @@ import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+/**
+ * The type Coffee order request dto.
+ */
 @Data
 @AllArgsConstructor
 public class CoffeeOrderRequestDTO {

@@ -17,6 +17,9 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+/**
+ * The type Coffee order controller.
+ */
 @Slf4j
 @RestController
 @RequestMapping("/order")
@@ -30,6 +33,12 @@ public class CoffeeOrderController {
     private final StaffService staffService;
 
 
+    /**
+     * Create coffee order response entity.
+     *
+     * @param requestDTO the request dto
+     * @return the response entity
+     */
     @PostMapping
     public ResponseEntity<CoffeeOrderResponseDTO> createCoffeeOrder(@Valid @RequestBody CoffeeOrderRequestDTO requestDTO) {
         if (requestDTO == null) {
@@ -56,6 +65,11 @@ public class CoffeeOrderController {
         return ResponseEntity.ok(responseDTO);
     }
 
+    /**
+     * Gets all coffee orders.
+     *
+     * @return the all coffee orders
+     */
     @GetMapping
     public ResponseEntity<List<CoffeeOrderResponseDTO>> getAllCoffeeOrders() {
         List<CoffeeOrder> coffeeOrderList = coffeeOrderService.getAllCoffeeOrders();
@@ -73,6 +87,12 @@ public class CoffeeOrderController {
         return ResponseEntity.ok(responseDTOList);
     }
 
+    /**
+     * Gets coffee order by id.
+     *
+     * @param id the id
+     * @return the coffee order by id
+     */
     @GetMapping("/{id}")
     public ResponseEntity<CoffeeOrderResponseDTO> getCoffeeOrderById(@PathVariable Long id) {
         Optional<CoffeeOrder> coffeeOrderOptional = coffeeOrderService.getCoffeeOrderById(id);
@@ -87,6 +107,13 @@ public class CoffeeOrderController {
         }
     }
 
+    /**
+     * Update coffee order response entity.
+     *
+     * @param id         the id
+     * @param requestDTO the request dto
+     * @return the response entity
+     */
     @PutMapping("/{id}")
     public ResponseEntity<CoffeeOrderResponseDTO> updateCoffeeOrder(@PathVariable Long id, @RequestBody CoffeeOrderRequestDTO requestDTO) {
         if (requestDTO == null) {
@@ -120,6 +147,12 @@ public class CoffeeOrderController {
         }
     }
 
+    /**
+     * Delete coffee order response entity.
+     *
+     * @param id the id
+     * @return the response entity
+     */
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteCoffeeOrder(@PathVariable Long id) {
         if (coffeeOrderService.deleteCoffeeOrder(id)) {
