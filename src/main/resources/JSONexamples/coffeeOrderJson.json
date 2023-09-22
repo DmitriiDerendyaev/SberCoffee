@@ -1,0 +1,36 @@
+[
+  {
+    "id": 11,
+    "client": {
+      "id": 3,
+      "name": "Иван",
+      "surname": "Иванов",
+      "patronymic": "Иванович",
+      "phoneNumber": "81234567890",
+      "address": "ул. Примерная, 123",
+      "email": "ivan@example.com",
+      "birthday": "1990-05-15"
+    },
+    "item": {
+      "id": 3,
+      "name": "Капучино",
+      "price": 150.0
+    },
+    "quantity": 2,
+    "status": {
+      "id": 5,
+      "name": "Создан"
+    },
+    "staff": {
+      "id": 18,
+      "name": "Дерендяев",
+      "surname": "Дмитрий",
+      "patronymic": "Сергеевич",
+      "position": "Владаелец",
+      "phoneNumber": "89225070232",
+      "address": "г. Москва, ул. Пушкина, д. 10"
+    },
+    "startTime": "2023-09-22T10:52:21.072094",
+    "total": 300.00
+  }
+]

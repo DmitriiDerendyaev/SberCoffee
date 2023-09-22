@@ -1,0 +1,32 @@
+[
+  {
+    "id": 3,
+    "name": "Иван",
+    "surname": "Иванов",
+    "patronymic": "Иванович",
+    "phoneNumber": "81234567890",
+    "address": "ул. Примерная, 123",
+    "email": "ivan@example.com",
+    "birthday": "1990-05-15"
+  },
+  {
+    "id": 4,
+    "name": "Мария",
+    "surname": "Петрова",
+    "patronymic": "Сергеевна",
+    "phoneNumber": "89876543210",
+    "address": "ул. Тестовая, 456",
+    "email": "maria@example.com",
+    "birthday": "1985-08-20"
+  },
+  {
+    "id": 5,
+    "name": "Алексей",
+    "surname": "Сидоров",
+    "patronymic": "Алексеевич",
+    "phoneNumber": "85555555555",
+    "address": "ул. Примерный проезд, 789",
+    "email": "alex@example.com",
+    "birthday": "1978-03-10"
+  }
+]
