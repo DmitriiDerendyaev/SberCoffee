@@ -1,0 +1,198 @@
+22.09.2023 08:17:01.716 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 08:17:01.773 [main] INFO   r.s.S.SberCoffeeApplication - Starting SberCoffeeApplication using Java 17.0.6 with PID 16516 (D:\mospolytech\Java\SberCoffee\target\classes started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 08:17:01.775 [main] INFO   r.s.S.SberCoffeeApplication - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 08:17:02.393 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 08:17:02.462 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 6 JPA repository interfaces.
+22.09.2023 08:17:03.274 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22.09.2023 08:17:03.284 [main] INFO   o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22.09.2023 08:17:03.286 [main] INFO   o.a.c.c.StandardService - Starting service [Tomcat]
+22.09.2023 08:17:03.286 [main] INFO   o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+22.09.2023 08:17:03.387 [main] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+22.09.2023 08:17:03.387 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1540 ms
+22.09.2023 08:17:03.561 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 08:17:03.619 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 08:17:03.622 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 08:17:03.787 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 08:17:03.946 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 08:17:03.966 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 08:17:04.220 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@71b26880
+22.09.2023 08:17:04.222 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 08:17:04.547 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 08:17:05.564 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 08:17:05.734 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 08:17:06.275 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 08:17:06.661 [main] INFO   o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22.09.2023 08:17:06.683 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22.09.2023 08:17:06.694 [main] INFO   r.s.S.SberCoffeeApplication - Started SberCoffeeApplication in 5.439 seconds (process running for 6.692)
+22.09.2023 08:17:24.544 [http-nio-8080-exec-2] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22.09.2023 08:17:24.545 [http-nio-8080-exec-2] INFO   o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22.09.2023 08:17:24.546 [http-nio-8080-exec-2] INFO   o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+22.09.2023 08:17:24.763 [http-nio-8080-exec-2] INFO   r.s.S.c.StatusController - List of statuses sent successfully
+22.09.2023 08:17:25.599 [http-nio-8080-exec-4] INFO   r.s.S.c.StatusController - List of statuses sent successfully
+22.09.2023 08:17:26.494 [http-nio-8080-exec-5] INFO   r.s.S.c.StatusController - List of statuses sent successfully
+22.09.2023 08:19:49.558 [http-nio-8080-exec-8] WARN   o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<ru.sber.SberCoffee.entity.Status> ru.sber.SberCoffee.controller.StatusController.createStatus(ru.sber.SberCoffee.entity.Status): [Field error in object 'status' on field 'name': rejected value []; codes [NotBlank.status.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [status.name,name]; arguments []; default message [name]]; default message [Status name is required]] ]
+22.09.2023 08:22:07.536 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 08:22:07.539 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 08:22:07.544 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 08:22:13.664 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 08:22:13.730 [main] INFO   r.s.S.SberCoffeeApplication - Starting SberCoffeeApplication using Java 17.0.6 with PID 15832 (D:\mospolytech\Java\SberCoffee\target\classes started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 08:22:13.733 [main] INFO   r.s.S.SberCoffeeApplication - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 08:22:14.524 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 08:22:14.612 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 6 JPA repository interfaces.
+22.09.2023 08:22:15.485 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22.09.2023 08:22:15.498 [main] INFO   o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22.09.2023 08:22:15.500 [main] INFO   o.a.c.c.StandardService - Starting service [Tomcat]
+22.09.2023 08:22:15.500 [main] INFO   o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+22.09.2023 08:22:15.635 [main] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+22.09.2023 08:22:15.635 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1785 ms
+22.09.2023 08:22:15.848 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 08:22:15.922 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 08:22:15.926 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 08:22:16.129 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 08:22:16.373 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 08:22:16.396 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 08:22:16.669 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7b1a30e5
+22.09.2023 08:22:16.674 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 08:22:17.236 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 08:22:18.517 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 08:22:18.712 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 08:22:19.470 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 08:22:20.019 [main] INFO   o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22.09.2023 08:22:20.051 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22.09.2023 08:22:20.064 [main] INFO   r.s.S.SberCoffeeApplication - Started SberCoffeeApplication in 6.967 seconds (process running for 8.226)
+22.09.2023 08:22:27.893 [http-nio-8080-exec-1] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22.09.2023 08:22:27.894 [http-nio-8080-exec-1] INFO   o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22.09.2023 08:22:27.896 [http-nio-8080-exec-1] INFO   o.s.w.s.DispatcherServlet - Completed initialization in 2 ms
+22.09.2023 08:22:28.073 [http-nio-8080-exec-1] WARN   o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<ru.sber.SberCoffee.entity.Status> ru.sber.SberCoffee.controller.StatusController.createStatus(ru.sber.SberCoffee.entity.Status): [Field error in object 'status' on field 'name': rejected value []; codes [NotBlank.status.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [status.name,name]; arguments []; default message [name]]; default message [Status name is required]] ]
+22.09.2023 08:25:10.634 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 08:25:10.637 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 08:25:10.647 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 08:25:17.667 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 08:25:17.753 [main] INFO   r.s.S.SberCoffeeApplication - Starting SberCoffeeApplication using Java 17.0.6 with PID 4056 (D:\mospolytech\Java\SberCoffee\target\classes started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 08:25:17.755 [main] INFO   r.s.S.SberCoffeeApplication - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 08:25:18.418 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 08:25:18.481 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 6 JPA repository interfaces.
+22.09.2023 08:25:19.337 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22.09.2023 08:25:19.348 [main] INFO   o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22.09.2023 08:25:19.350 [main] INFO   o.a.c.c.StandardService - Starting service [Tomcat]
+22.09.2023 08:25:19.351 [main] INFO   o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+22.09.2023 08:25:19.481 [main] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+22.09.2023 08:25:19.481 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1626 ms
+22.09.2023 08:25:19.650 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 08:25:19.704 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 08:25:19.707 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 08:25:19.868 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 08:25:20.040 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 08:25:20.058 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 08:25:20.250 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5ce3409b
+22.09.2023 08:25:20.252 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 08:25:20.591 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 08:25:21.485 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 08:25:21.631 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 08:25:22.153 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 08:25:22.548 [main] INFO   o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22.09.2023 08:25:22.582 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22.09.2023 08:25:22.591 [main] INFO   r.s.S.SberCoffeeApplication - Started SberCoffeeApplication in 5.515 seconds (process running for 6.63)
+22.09.2023 08:25:27.926 [http-nio-8080-exec-2] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22.09.2023 08:25:27.927 [http-nio-8080-exec-2] INFO   o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22.09.2023 08:25:27.928 [http-nio-8080-exec-2] INFO   o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+22.09.2023 08:25:28.086 [http-nio-8080-exec-2] WARN   o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<ru.sber.SberCoffee.entity.Status> ru.sber.SberCoffee.controller.StatusController.createStatus(ru.sber.SberCoffee.entity.Status): [Field error in object 'status' on field 'name': rejected value []; codes [NotBlank.status.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [status.name,name]; arguments []; default message [name]]; default message [Status name is required]] ]
+22.09.2023 08:26:02.446 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 08:26:02.449 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 08:26:02.453 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 08:26:09.278 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 08:26:09.346 [main] INFO   r.s.S.SberCoffeeApplication - Starting SberCoffeeApplication using Java 17.0.6 with PID 3620 (D:\mospolytech\Java\SberCoffee\target\classes started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 08:26:09.348 [main] INFO   r.s.S.SberCoffeeApplication - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 08:26:10.066 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 08:26:10.139 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 6 JPA repository interfaces.
+22.09.2023 08:26:11.013 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22.09.2023 08:26:11.033 [main] INFO   o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22.09.2023 08:26:11.038 [main] INFO   o.a.c.c.StandardService - Starting service [Tomcat]
+22.09.2023 08:26:11.039 [main] INFO   o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+22.09.2023 08:26:11.188 [main] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+22.09.2023 08:26:11.188 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1759 ms
+22.09.2023 08:26:11.388 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 08:26:11.446 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 08:26:11.449 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 08:26:11.622 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 08:26:11.801 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 08:26:11.822 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 08:26:12.041 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2fca3eb5
+22.09.2023 08:26:12.043 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 08:26:12.390 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 08:26:13.321 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 08:26:13.471 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 08:26:14.011 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 08:26:14.405 [main] INFO   o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22.09.2023 08:26:14.428 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22.09.2023 08:26:14.441 [main] INFO   r.s.S.SberCoffeeApplication - Started SberCoffeeApplication in 5.649 seconds (process running for 6.821)
+22.09.2023 08:26:20.295 [http-nio-8080-exec-1] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22.09.2023 08:26:20.296 [http-nio-8080-exec-1] INFO   o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22.09.2023 08:26:20.297 [http-nio-8080-exec-1] INFO   o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+22.09.2023 08:26:20.458 [http-nio-8080-exec-1] WARN   o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<ru.sber.SberCoffee.entity.Status> ru.sber.SberCoffee.controller.StatusController.createStatus(ru.sber.SberCoffee.entity.Status): [Field error in object 'status' on field 'name': rejected value []; codes [NotBlank.status.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [status.name,name]; arguments []; default message [name]]; default message [Status name is required]] ]
+22.09.2023 08:27:07.838 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 08:27:07.840 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 08:27:07.844 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 08:27:13.844 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 08:27:13.898 [main] INFO   r.s.S.SberCoffeeApplication - Starting SberCoffeeApplication using Java 17.0.6 with PID 4140 (D:\mospolytech\Java\SberCoffee\target\classes started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 08:27:13.899 [main] INFO   r.s.S.SberCoffeeApplication - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 08:27:14.551 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 08:27:14.617 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 6 JPA repository interfaces.
+22.09.2023 08:27:15.455 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22.09.2023 08:27:15.465 [main] INFO   o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22.09.2023 08:27:15.467 [main] INFO   o.a.c.c.StandardService - Starting service [Tomcat]
+22.09.2023 08:27:15.467 [main] INFO   o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+22.09.2023 08:27:15.597 [main] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+22.09.2023 08:27:15.598 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1633 ms
+22.09.2023 08:27:15.774 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 08:27:15.830 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 08:27:15.833 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 08:27:15.986 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 08:27:16.163 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 08:27:16.181 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 08:27:16.379 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@66234b0f
+22.09.2023 08:27:16.382 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 08:27:16.733 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 08:27:17.649 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 08:27:17.808 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 08:27:18.337 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 08:27:18.718 [main] INFO   o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22.09.2023 08:27:18.740 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22.09.2023 08:27:18.751 [main] INFO   r.s.S.SberCoffeeApplication - Started SberCoffeeApplication in 5.33 seconds (process running for 6.497)
+22.09.2023 08:27:25.924 [http-nio-8080-exec-2] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22.09.2023 08:27:25.924 [http-nio-8080-exec-2] INFO   o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22.09.2023 08:27:25.926 [http-nio-8080-exec-2] INFO   o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+22.09.2023 08:27:26.079 [http-nio-8080-exec-2] WARN   r.s.S.h.ErrorHandler - Validation error:  Validation failed for argument [0] in public org.springframework.http.ResponseEntity<ru.sber.SberCoffee.entity.Status> ru.sber.SberCoffee.controller.StatusController.createStatus(ru.sber.SberCoffee.entity.Status): [Field error in object 'status' on field 'name': rejected value []; codes [NotBlank.status.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [status.name,name]; arguments []; default message [name]]; default message [Status name is required]] . Stacktrace null
+22.09.2023 08:28:32.476 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 08:28:32.478 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 08:28:32.488 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 08:28:38.549 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 08:28:38.608 [main] INFO   r.s.S.SberCoffeeApplication - Starting SberCoffeeApplication using Java 17.0.6 with PID 12668 (D:\mospolytech\Java\SberCoffee\target\classes started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 08:28:38.609 [main] INFO   r.s.S.SberCoffeeApplication - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 08:28:39.218 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 08:28:39.284 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 6 JPA repository interfaces.
+22.09.2023 08:28:40.151 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22.09.2023 08:28:40.160 [main] INFO   o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22.09.2023 08:28:40.162 [main] INFO   o.a.c.c.StandardService - Starting service [Tomcat]
+22.09.2023 08:28:40.162 [main] INFO   o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+22.09.2023 08:28:40.275 [main] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+22.09.2023 08:28:40.275 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1596 ms
+22.09.2023 08:28:40.462 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 08:28:40.518 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 08:28:40.521 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 08:28:40.688 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 08:28:40.851 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 08:28:40.868 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 08:28:41.065 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1152900
+22.09.2023 08:28:41.067 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 08:28:41.388 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 08:28:42.349 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 08:28:42.517 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 08:28:43.054 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 08:28:43.448 [main] INFO   o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22.09.2023 08:28:43.476 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22.09.2023 08:28:43.486 [main] INFO   r.s.S.SberCoffeeApplication - Started SberCoffeeApplication in 5.363 seconds (process running for 6.514)
+22.09.2023 08:28:52.430 [http-nio-8080-exec-1] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22.09.2023 08:28:52.430 [http-nio-8080-exec-1] INFO   o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22.09.2023 08:28:52.431 [http-nio-8080-exec-1] INFO   o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+22.09.2023 08:28:52.588 [http-nio-8080-exec-1] WARN   r.s.S.h.ErrorHandler - Validation error:  Validation failed for argument [0] in public org.springframework.http.ResponseEntity<ru.sber.SberCoffee.entity.Status> ru.sber.SberCoffee.controller.StatusController.createStatus(ru.sber.SberCoffee.entity.Status): [Field error in object 'status' on field 'name': rejected value []; codes [NotBlank.status.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [status.name,name]; arguments []; default message [name]]; default message [Status name is required]] . Stacktrace null
