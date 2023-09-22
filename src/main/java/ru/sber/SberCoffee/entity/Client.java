@@ -1,11 +1,14 @@
 package ru.sber.SberCoffee.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Entity
 @Data
@@ -15,12 +18,25 @@ public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @NotBlank(message = "Name is required")
     private String name;
+
+    @NotBlank(message = "Surname is required")
     private String surname;
+
+    @NotBlank(message = "Patronymic is required")
     private String patronymic;
-    private int phoneNumber;
+
+    @NotBlank(message = "Phone number is required")
+    @Pattern(regexp = "\\d{11}", message = "Phone number should be 10 digits")
+    private String phoneNumber;
+
+    @NotBlank(message = "Address is required")
     private String address;
+
+    @NotBlank(message = "Email is required")
+    @Email(message = "Invalid email format")
     private String email;
-    @Temporal(TemporalType.DATE) //для обнуления времени при сохранении
-    private Date birthday;
+    @Column(name = "birthday")
+    private LocalDate birthday;
 }
