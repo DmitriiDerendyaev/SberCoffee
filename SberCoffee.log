@@ -196,3 +196,1316 @@
 22.09.2023 08:28:52.430 [http-nio-8080-exec-1] INFO   o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 22.09.2023 08:28:52.431 [http-nio-8080-exec-1] INFO   o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
 22.09.2023 08:28:52.588 [http-nio-8080-exec-1] WARN   r.s.S.h.ErrorHandler - Validation error:  Validation failed for argument [0] in public org.springframework.http.ResponseEntity<ru.sber.SberCoffee.entity.Status> ru.sber.SberCoffee.controller.StatusController.createStatus(ru.sber.SberCoffee.entity.Status): [Field error in object 'status' on field 'name': rejected value []; codes [NotBlank.status.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [status.name,name]; arguments []; default message [name]]; default message [Status name is required]] . Stacktrace null
+22.09.2023 08:57:57.214 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 08:57:57.216 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 08:57:57.222 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 08:58:02.922 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 08:58:02.970 [main] INFO   r.s.S.SberCoffeeApplication - Starting SberCoffeeApplication using Java 17.0.6 with PID 16472 (D:\mospolytech\Java\SberCoffee\target\classes started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 08:58:02.972 [main] INFO   r.s.S.SberCoffeeApplication - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 08:58:03.533 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 08:58:03.592 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 6 JPA repository interfaces.
+22.09.2023 08:58:04.332 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22.09.2023 08:58:04.366 [main] INFO   o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22.09.2023 08:58:04.369 [main] INFO   o.a.c.c.StandardService - Starting service [Tomcat]
+22.09.2023 08:58:04.369 [main] INFO   o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+22.09.2023 08:58:04.478 [main] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+22.09.2023 08:58:04.479 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1449 ms
+22.09.2023 08:58:04.647 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 08:58:04.701 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 08:58:04.703 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 08:58:04.860 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 08:58:05.008 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 08:58:05.025 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 08:58:05.305 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6b6def36
+22.09.2023 08:58:05.307 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 08:58:05.614 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 08:58:06.459 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 08:58:06.606 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 08:58:07.095 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 08:58:07.430 [main] INFO   o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22.09.2023 08:58:07.455 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22.09.2023 08:58:07.467 [main] INFO   r.s.S.SberCoffeeApplication - Started SberCoffeeApplication in 4.928 seconds (process running for 5.867)
+22.09.2023 09:47:26.916 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 09:47:26.933 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 09:47:26.948 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 09:47:34.059 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 09:47:34.114 [main] INFO   r.s.S.SberCoffeeApplication - Starting SberCoffeeApplication using Java 17.0.6 with PID 19304 (D:\mospolytech\Java\SberCoffee\target\classes started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 09:47:34.115 [main] INFO   r.s.S.SberCoffeeApplication - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 09:47:34.767 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 09:47:34.824 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 6 JPA repository interfaces.
+22.09.2023 09:47:35.559 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22.09.2023 09:47:35.568 [main] INFO   o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22.09.2023 09:47:35.570 [main] INFO   o.a.c.c.StandardService - Starting service [Tomcat]
+22.09.2023 09:47:35.571 [main] INFO   o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+22.09.2023 09:47:35.671 [main] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+22.09.2023 09:47:35.672 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1489 ms
+22.09.2023 09:47:35.829 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 09:47:35.883 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 09:47:35.885 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 09:47:36.023 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 09:47:36.175 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 09:47:36.192 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 09:47:36.376 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5ce3409b
+22.09.2023 09:47:36.379 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 09:47:36.681 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 09:47:37.560 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 09:47:37.701 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 09:47:38.189 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 09:47:38.534 [main] INFO   o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22.09.2023 09:47:38.562 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22.09.2023 09:47:38.575 [main] INFO   r.s.S.SberCoffeeApplication - Started SberCoffeeApplication in 4.903 seconds (process running for 5.791)
+22.09.2023 09:49:30.204 [http-nio-8080-exec-2] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22.09.2023 09:49:30.204 [http-nio-8080-exec-2] INFO   o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22.09.2023 09:49:30.205 [http-nio-8080-exec-2] INFO   o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+22.09.2023 09:49:30.359 [http-nio-8080-exec-2] WARN   r.s.S.h.ErrorHandler - Validation error:  Validation failed for argument [0] in public org.springframework.http.ResponseEntity<ru.sber.SberCoffee.dto.StaffResponseDTO> ru.sber.SberCoffee.controller.StaffController.createStaff(ru.sber.SberCoffee.dto.StaffRequestDTO): [Field error in object 'staffRequestDTO' on field 'phoneNumber': rejected value [999999]; codes [Pattern.staffRequestDTO.phoneNumber,Pattern.phoneNumber,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [staffRequestDTO.phoneNumber,phoneNumber]; arguments []; default message [phoneNumber],[Ljakarta.validation.constraints.Pattern$Flag;@1f4e37a,\d{11}]; default message [Phone number must be a 10-digit number]] . Stacktrace null
+22.09.2023 10:04:28.653 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 10:04:28.655 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 10:04:28.660 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 10:04:33.772 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 10:04:33.843 [main] INFO   r.s.S.SberCoffeeApplication - Starting SberCoffeeApplication using Java 17.0.6 with PID 17484 (D:\mospolytech\Java\SberCoffee\target\classes started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 10:04:33.845 [main] INFO   r.s.S.SberCoffeeApplication - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 10:04:34.441 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 10:04:34.502 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 6 JPA repository interfaces.
+22.09.2023 10:04:35.229 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22.09.2023 10:04:35.238 [main] INFO   o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22.09.2023 10:04:35.240 [main] INFO   o.a.c.c.StandardService - Starting service [Tomcat]
+22.09.2023 10:04:35.240 [main] INFO   o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+22.09.2023 10:04:35.341 [main] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+22.09.2023 10:04:35.341 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1424 ms
+22.09.2023 10:04:35.531 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 10:04:35.586 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 10:04:35.589 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 10:04:35.722 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 10:04:35.892 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 10:04:35.915 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 10:04:36.095 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2fca3eb5
+22.09.2023 10:04:36.098 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 10:04:36.394 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 10:04:37.217 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 10:04:37.351 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 10:04:37.856 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 10:04:38.228 [main] INFO   o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22.09.2023 10:04:38.250 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22.09.2023 10:04:38.259 [main] INFO   r.s.S.SberCoffeeApplication - Started SberCoffeeApplication in 4.926 seconds (process running for 5.85)
+22.09.2023 10:06:33.038 [http-nio-8080-exec-1] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22.09.2023 10:06:33.038 [http-nio-8080-exec-1] INFO   o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22.09.2023 10:06:33.039 [http-nio-8080-exec-1] INFO   o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+22.09.2023 10:06:33.262 [http-nio-8080-exec-1] INFO   r.s.S.c.StatusController - Status created successfully: Status(id=5, name=Создан)
+22.09.2023 10:06:42.825 [http-nio-8080-exec-3] INFO   r.s.S.c.StatusController - Status created successfully: Status(id=6, name=В процессе)
+22.09.2023 10:06:49.436 [http-nio-8080-exec-4] INFO   r.s.S.c.StatusController - Status created successfully: Status(id=7, name=Завершен)
+22.09.2023 10:09:00.934 [http-nio-8080-exec-7] INFO   r.s.S.c.PositionController - Position created successfully: Position(id=4, name=Бариста, description=Приготавливает кофе и обслуживает клиентов)
+22.09.2023 10:09:25.510 [http-nio-8080-exec-8] INFO   r.s.S.c.PositionController - Position created successfully: Position(id=5, name=Менеджер, description=Руководит точкой)
+22.09.2023 10:10:08.774 [http-nio-8080-exec-9] INFO   r.s.S.c.PositionController - Position created successfully: Position(id=6, name=Владаелец, description=Владаелец сети)
+22.09.2023 10:12:17.442 [http-nio-8080-exec-1] INFO   r.s.S.c.PositionController - Retrieved 3 positions
+22.09.2023 10:14:15.856 [http-nio-8080-exec-5] INFO   r.s.S.c.StaffController - Created staff member: StaffResponseDTO(id=18, name=Дерендяев, surname=Дмитрий, patronymic=Сергеевич, position=Владаелец, phoneNumber=89225070232, address=г. Москва, ул. Пушкина, д. 10)
+22.09.2023 10:14:29.606 [http-nio-8080-exec-6] WARN   r.s.S.h.ErrorHandler - Validation error:  Validation failed for argument [0] in public org.springframework.http.ResponseEntity<ru.sber.SberCoffee.dto.StaffResponseDTO> ru.sber.SberCoffee.controller.StaffController.createStaff(ru.sber.SberCoffee.dto.StaffRequestDTO): [Field error in object 'staffRequestDTO' on field 'phoneNumber': rejected value [9876543210]; codes [Pattern.staffRequestDTO.phoneNumber,Pattern.phoneNumber,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [staffRequestDTO.phoneNumber,phoneNumber]; arguments []; default message [phoneNumber],[Ljakarta.validation.constraints.Pattern$Flag;@4975d079,\d{11}]; default message [Phone number must be a 10-digit number]] . Stacktrace null
+22.09.2023 10:14:54.921 [http-nio-8080-exec-8] INFO   r.s.S.c.StaffController - Created staff member: StaffResponseDTO(id=19, name=Мария, surname=Петрова, patronymic=Александровна, position=Менеджер, phoneNumber=89199192843, address=г. Санкт-Петербург, ул. Ленина, д. 20)
+22.09.2023 10:15:16.789 [http-nio-8080-exec-9] INFO   r.s.S.c.StaffController - Created staff member: StaffResponseDTO(id=20, name=Андрей, surname=Сидоров, patronymic=null, position=Бариста, phoneNumber=89998887766, address=г. Екатеринбург, ул. Гагарина, д. 5)
+22.09.2023 10:16:53.230 [http-nio-8080-exec-1] INFO   r.s.S.c.ItemController - Created item with ID 3
+22.09.2023 10:16:58.864 [http-nio-8080-exec-3] INFO   r.s.S.c.ItemController - Created item with ID 4
+22.09.2023 10:17:03.737 [http-nio-8080-exec-4] INFO   r.s.S.c.ItemController - Created item with ID 5
+22.09.2023 10:19:53.154 [http-nio-8080-exec-7] WARN   r.s.S.h.ErrorHandler - Validation error:  Validation failed for argument [0] in public org.springframework.http.ResponseEntity<ru.sber.SberCoffee.entity.Client> ru.sber.SberCoffee.controller.ClientController.createClient(ru.sber.SberCoffee.entity.Client): [Field error in object 'client' on field 'phoneNumber': rejected value [1234567890]; codes [Pattern.client.phoneNumber,Pattern.phoneNumber,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [client.phoneNumber,phoneNumber]; arguments []; default message [phoneNumber],[Ljakarta.validation.constraints.Pattern$Flag;@4975d079,\d{11}]; default message [Phone number should be 10 digits]] . Stacktrace null
+22.09.2023 10:20:02.103 [http-nio-8080-exec-9] INFO   r.s.S.c.ClientController - Created client with ID 3
+22.09.2023 10:20:17.353 [http-nio-8080-exec-10] INFO   r.s.S.c.ClientController - Created client with ID 4
+22.09.2023 10:20:25.203 [http-nio-8080-exec-2] INFO   r.s.S.c.ClientController - Created client with ID 5
+22.09.2023 10:21:42.352 [http-nio-8080-exec-4] INFO   r.s.S.c.ClientController - Returned 3 clients
+22.09.2023 10:22:12.014 [http-nio-8080-exec-5] INFO   r.s.S.c.StaffController - Retrieved 3 staff members
+22.09.2023 10:34:55.722 [http-nio-8080-exec-8] INFO   r.s.S.c.PositionController - Retrieved 3 positions
+22.09.2023 10:35:27.045 [http-nio-8080-exec-9] INFO   r.s.S.c.StaffController - Retrieved 3 staff members
+22.09.2023 10:35:34.416 [http-nio-8080-exec-10] INFO   r.s.S.c.ClientController - Returned 3 clients
+22.09.2023 10:35:42.714 [http-nio-8080-exec-2] INFO   r.s.S.c.StatusController - List of statuses sent successfully [Status(id=5, name=Создан), Status(id=6, name=В процессе), Status(id=7, name=Завершен)] 
+22.09.2023 10:35:50.879 [http-nio-8080-exec-1] INFO   r.s.S.c.ItemController - Retrieved 3 items successfully
+22.09.2023 10:36:01.440 [http-nio-8080-exec-3] WARN   r.s.S.c.CoffeeOrderController - No coffee orders found
+22.09.2023 10:38:10.682 [http-nio-8080-exec-6] ERROR  o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "ru.sber.SberCoffee.entity.Staff.getId()" because "staff" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "ru.sber.SberCoffee.entity.Staff.getId()" because "staff" is null
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.mapStaffToStaffDTO(CoffeeOrderController.java:149)
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.convertToResponseDTO(CoffeeOrderController.java:141)
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.createCoffeeOrder(CoffeeOrderController.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+22.09.2023 10:39:03.401 [http-nio-8080-exec-8] ERROR  o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "ru.sber.SberCoffee.entity.Staff.getId()" because "staff" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "ru.sber.SberCoffee.entity.Staff.getId()" because "staff" is null
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.mapStaffToStaffDTO(CoffeeOrderController.java:149)
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.convertToResponseDTO(CoffeeOrderController.java:141)
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.createCoffeeOrder(CoffeeOrderController.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+22.09.2023 10:39:29.320 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 10:39:29.322 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 10:39:29.328 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 10:39:33.463 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 10:39:33.516 [main] INFO   r.s.S.SberCoffeeApplication - Starting SberCoffeeApplication using Java 17.0.6 with PID 16528 (D:\mospolytech\Java\SberCoffee\target\classes started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 10:39:33.517 [main] INFO   r.s.S.SberCoffeeApplication - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 10:39:34.111 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 10:39:34.187 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 6 JPA repository interfaces.
+22.09.2023 10:39:35.027 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22.09.2023 10:39:35.039 [main] INFO   o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22.09.2023 10:39:35.042 [main] INFO   o.a.c.c.StandardService - Starting service [Tomcat]
+22.09.2023 10:39:35.042 [main] INFO   o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+22.09.2023 10:39:35.169 [main] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+22.09.2023 10:39:35.170 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1590 ms
+22.09.2023 10:39:35.342 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 10:39:35.408 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 10:39:35.411 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 10:39:35.586 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 10:39:35.744 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 10:39:35.763 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 10:39:36.081 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6f8667bb
+22.09.2023 10:39:36.083 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 10:39:36.427 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 10:39:37.387 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 10:39:37.525 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 10:39:38.109 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 10:39:38.502 [main] INFO   o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22.09.2023 10:39:38.532 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22.09.2023 10:39:38.550 [main] INFO   r.s.S.SberCoffeeApplication - Started SberCoffeeApplication in 5.496 seconds (process running for 6.732)
+22.09.2023 10:40:27.580 [http-nio-8080-exec-3] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22.09.2023 10:40:27.581 [http-nio-8080-exec-3] INFO   o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22.09.2023 10:40:27.582 [http-nio-8080-exec-3] INFO   o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+22.09.2023 10:40:46.649 [http-nio-8080-exec-3] ERROR  o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "ru.sber.SberCoffee.entity.Staff.getId()" because "staff" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "ru.sber.SberCoffee.entity.Staff.getId()" because "staff" is null
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.mapStaffToStaffDTO(CoffeeOrderController.java:149)
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.convertToResponseDTO(CoffeeOrderController.java:141)
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.createCoffeeOrder(CoffeeOrderController.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+22.09.2023 10:41:52.867 [http-nio-8080-exec-1] ERROR  o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "ru.sber.SberCoffee.entity.Staff.getId()" because "staff" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "ru.sber.SberCoffee.entity.Staff.getId()" because "staff" is null
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.mapStaffToStaffDTO(CoffeeOrderController.java:149)
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.convertToResponseDTO(CoffeeOrderController.java:141)
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.createCoffeeOrder(CoffeeOrderController.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+22.09.2023 10:45:35.542 [HikariPool-1 housekeeper] WARN   c.z.h.p.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m51s25ms22µs600ns).
+22.09.2023 10:45:35.552 [http-nio-8080-exec-6] ERROR  o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "ru.sber.SberCoffee.entity.Staff.getId()" because "staff" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "ru.sber.SberCoffee.entity.Staff.getId()" because "staff" is null
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.mapStaffToStaffDTO(CoffeeOrderController.java:149)
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.convertToResponseDTO(CoffeeOrderController.java:141)
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.createCoffeeOrder(CoffeeOrderController.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+22.09.2023 10:45:35.612 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 10:45:35.614 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 10:45:35.620 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 10:45:41.923 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 10:45:41.986 [main] INFO   r.s.S.SberCoffeeApplication - Starting SberCoffeeApplication using Java 17.0.6 with PID 2460 (D:\mospolytech\Java\SberCoffee\target\classes started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 10:45:41.987 [main] INFO   r.s.S.SberCoffeeApplication - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 10:45:42.583 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 10:45:42.655 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 6 JPA repository interfaces.
+22.09.2023 10:45:43.419 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22.09.2023 10:45:43.431 [main] INFO   o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22.09.2023 10:45:43.433 [main] INFO   o.a.c.c.StandardService - Starting service [Tomcat]
+22.09.2023 10:45:43.433 [main] INFO   o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+22.09.2023 10:45:43.536 [main] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+22.09.2023 10:45:43.537 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1473 ms
+22.09.2023 10:45:43.708 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 10:45:43.766 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 10:45:43.769 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 10:45:43.927 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 10:45:44.085 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 10:45:44.102 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 10:45:44.297 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@66234b0f
+22.09.2023 10:45:44.299 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 10:45:44.727 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 10:45:45.633 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 10:45:45.771 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 10:45:46.243 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 10:45:46.606 [main] INFO   o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22.09.2023 10:45:46.628 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22.09.2023 10:45:46.638 [main] INFO   r.s.S.SberCoffeeApplication - Started SberCoffeeApplication in 5.207 seconds (process running for 6.237)
+22.09.2023 10:46:05.474 [http-nio-8080-exec-1] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22.09.2023 10:46:05.475 [http-nio-8080-exec-1] INFO   o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22.09.2023 10:46:05.476 [http-nio-8080-exec-1] INFO   o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+22.09.2023 10:46:05.787 [http-nio-8080-exec-1] ERROR  o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "ru.sber.SberCoffee.entity.Staff.getId()" because "staff" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "ru.sber.SberCoffee.entity.Staff.getId()" because "staff" is null
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.mapStaffToStaffDTO(CoffeeOrderController.java:149)
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.convertToResponseDTO(CoffeeOrderController.java:141)
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.createCoffeeOrder(CoffeeOrderController.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+22.09.2023 10:46:25.581 [http-nio-8080-exec-4] ERROR  o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "ru.sber.SberCoffee.entity.Staff.getId()" because "staff" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "ru.sber.SberCoffee.entity.Staff.getId()" because "staff" is null
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.mapStaffToStaffDTO(CoffeeOrderController.java:149)
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.convertToResponseDTO(CoffeeOrderController.java:141)
+	at ru.sber.SberCoffee.controller.CoffeeOrderController.createCoffeeOrder(CoffeeOrderController.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+22.09.2023 10:49:47.449 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 10:49:47.451 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 10:49:47.457 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 10:49:51.592 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 10:49:51.642 [main] INFO   r.s.S.SberCoffeeApplication - Starting SberCoffeeApplication using Java 17.0.6 with PID 5320 (D:\mospolytech\Java\SberCoffee\target\classes started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 10:49:51.643 [main] INFO   r.s.S.SberCoffeeApplication - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 10:49:52.204 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 10:49:52.274 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 6 JPA repository interfaces.
+22.09.2023 10:49:53.096 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22.09.2023 10:49:53.106 [main] INFO   o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22.09.2023 10:49:53.108 [main] INFO   o.a.c.c.StandardService - Starting service [Tomcat]
+22.09.2023 10:49:53.108 [main] INFO   o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+22.09.2023 10:49:53.235 [main] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+22.09.2023 10:49:53.235 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1527 ms
+22.09.2023 10:49:53.408 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 10:49:53.474 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 10:49:53.477 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 10:49:53.639 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 10:49:53.794 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 10:49:53.815 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 10:49:54.019 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@20b829d5
+22.09.2023 10:49:54.021 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 10:49:54.369 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 10:49:55.305 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 10:49:55.483 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 10:49:56.067 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 10:49:56.479 [main] INFO   o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22.09.2023 10:49:56.503 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22.09.2023 10:49:56.514 [main] INFO   r.s.S.SberCoffeeApplication - Started SberCoffeeApplication in 5.337 seconds (process running for 6.533)
+22.09.2023 10:50:03.998 [http-nio-8080-exec-3] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22.09.2023 10:50:03.999 [http-nio-8080-exec-3] INFO   o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22.09.2023 10:50:04.001 [http-nio-8080-exec-3] INFO   o.s.w.s.DispatcherServlet - Completed initialization in 2 ms
+22.09.2023 10:52:02.872 [HikariPool-1 housekeeper] WARN   c.z.h.p.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m33s869ms561µs900ns).
+22.09.2023 10:52:03.178 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 10:52:03.196 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 10:52:03.204 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 10:52:09.206 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 10:52:09.259 [main] INFO   r.s.S.SberCoffeeApplication - Starting SberCoffeeApplication using Java 17.0.6 with PID 10748 (D:\mospolytech\Java\SberCoffee\target\classes started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 10:52:09.260 [main] INFO   r.s.S.SberCoffeeApplication - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 10:52:09.802 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 10:52:09.862 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 6 JPA repository interfaces.
+22.09.2023 10:52:10.608 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+22.09.2023 10:52:10.616 [main] INFO   o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+22.09.2023 10:52:10.618 [main] INFO   o.a.c.c.StandardService - Starting service [Tomcat]
+22.09.2023 10:52:10.619 [main] INFO   o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+22.09.2023 10:52:10.715 [main] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+22.09.2023 10:52:10.716 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1393 ms
+22.09.2023 10:52:10.881 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 10:52:10.935 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 10:52:10.937 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 10:52:11.106 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 10:52:11.278 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 10:52:11.297 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 10:52:11.482 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5ce3409b
+22.09.2023 10:52:11.484 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 10:52:11.799 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 10:52:12.617 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 10:52:12.765 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 10:52:13.234 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 10:52:13.605 [main] INFO   o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+22.09.2023 10:52:13.627 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+22.09.2023 10:52:13.636 [main] INFO   r.s.S.SberCoffeeApplication - Started SberCoffeeApplication in 4.826 seconds (process running for 5.744)
+22.09.2023 10:52:20.848 [http-nio-8080-exec-2] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22.09.2023 10:52:20.848 [http-nio-8080-exec-2] INFO   o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22.09.2023 10:52:20.849 [http-nio-8080-exec-2] INFO   o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+22.09.2023 10:52:21.116 [http-nio-8080-exec-2] INFO   r.s.S.c.CoffeeOrderController - Created coffee order with ID: 11
+22.09.2023 11:54:41.381 [HikariPool-1 housekeeper] WARN   c.z.h.p.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m29s683ms58µs800ns).
+22.09.2023 12:19:16.675 [main] INFO   r.s.S.c.StatusController - List of statuses sent successfully [Status(id=1, name=Active), Status(id=2, name=Inactive)] 
+22.09.2023 12:20:27.302 [main] INFO   r.s.S.c.StatusController - List of statuses sent successfully [Status(id=1, name=Active), Status(id=2, name=Inactive)] 
+22.09.2023 12:27:52.821 [main] INFO   r.s.S.c.StatusController - Status created successfully: Status(id=1, name=Active)
+22.09.2023 12:27:52.863 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Update failed.
+22.09.2023 12:27:52.870 [main] WARN   r.s.S.c.StatusController - Status doesn't exist. Requested statusId: 1
+22.09.2023 12:27:52.876 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Deletion failed.
+22.09.2023 12:27:52.882 [main] INFO   r.s.S.c.StatusController - Status updated successfully: Status(id=1, name=Inactive)
+22.09.2023 12:27:52.887 [main] INFO   r.s.S.c.StatusController - Status with ID 1 deleted successfully
+22.09.2023 12:27:52.892 [main] WARN   r.s.S.c.StatusController - Sent body is null
+22.09.2023 12:27:52.898 [main] INFO   r.s.S.c.StatusController - List of statuses sent successfully [Status(id=1, name=Active), Status(id=2, name=Inactive)] 
+22.09.2023 12:27:52.904 [main] INFO   r.s.S.c.StatusController - Requested status Status(id=1, name=Active)
+22.09.2023 12:34:34.637 [main] INFO   r.s.S.c.StatusController - Status created successfully: Status(id=1, name=Active)
+22.09.2023 12:34:34.679 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Update failed.
+22.09.2023 12:34:34.685 [main] WARN   r.s.S.c.StatusController - Status doesn't exist. Requested statusId: 1
+22.09.2023 12:34:34.691 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Deletion failed.
+22.09.2023 12:34:34.696 [main] INFO   r.s.S.c.StatusController - Status updated successfully: Status(id=1, name=Active)
+22.09.2023 12:34:34.702 [main] INFO   r.s.S.c.StatusController - Status with ID 1 deleted successfully
+22.09.2023 12:34:34.707 [main] WARN   r.s.S.c.StatusController - Sent body is null
+22.09.2023 12:34:34.712 [main] INFO   r.s.S.c.StatusController - List of statuses sent successfully [Status(id=1, name=Active), Status(id=2, name=Inactive)] 
+22.09.2023 12:34:34.719 [main] INFO   r.s.S.c.StatusController - Requested status Status(id=1, name=Active)
+22.09.2023 12:37:22.916 [main] INFO   o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.sber.SberCoffee.SberCoffeeApplicationTests]: SberCoffeeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22.09.2023 12:37:23.111 [main] INFO   o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.sber.SberCoffee.SberCoffeeApplication for test class ru.sber.SberCoffee.SberCoffeeApplicationTests
+22.09.2023 12:37:23.636 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 12:37:23.667 [main] INFO   r.s.S.SberCoffeeApplicationTests - Starting SberCoffeeApplicationTests using Java 17.0.6 with PID 14300 (started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 12:37:23.668 [main] INFO   r.s.S.SberCoffeeApplicationTests - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 12:37:24.706 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 12:37:24.778 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 6 JPA repository interfaces.
+22.09.2023 12:37:25.713 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 12:37:25.799 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 12:37:25.802 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 12:37:26.139 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 12:37:26.389 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 12:37:26.415 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 12:37:26.736 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6cdbe5ec
+22.09.2023 12:37:26.740 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 12:37:27.223 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 12:37:28.401 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 12:37:28.577 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 12:37:29.434 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 12:37:30.042 [main] INFO   r.s.S.SberCoffeeApplicationTests - Started SberCoffeeApplicationTests in 6.659 seconds (process running for 8.549)
+22.09.2023 12:37:30.795 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 12:37:30.799 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 12:37:30.807 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 12:45:56.654 [main] INFO   r.s.S.c.StatusController - Status created successfully: Status(id=1, name=Active)
+22.09.2023 12:45:56.704 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Update failed.
+22.09.2023 12:45:56.710 [main] WARN   r.s.S.c.StatusController - Status doesn't exist. Requested statusId: 1
+22.09.2023 12:45:56.716 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Deletion failed.
+22.09.2023 12:45:56.722 [main] INFO   r.s.S.c.StatusController - Status updated successfully: Status(id=1, name=Active)
+22.09.2023 12:45:56.728 [main] INFO   r.s.S.c.StatusController - Status with ID 1 deleted successfully
+22.09.2023 12:45:56.732 [main] WARN   r.s.S.c.StatusController - Sent body is null
+22.09.2023 12:45:56.737 [main] INFO   r.s.S.c.StatusController - List of statuses sent successfully [Status(id=1, name=Active), Status(id=2, name=Inactive)] 
+22.09.2023 12:45:56.742 [main] INFO   r.s.S.c.StatusController - Requested status Status(id=1, name=Active)
+22.09.2023 12:45:56.902 [main] INFO   o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.sber.SberCoffee.SberCoffeeApplicationTests]: SberCoffeeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22.09.2023 12:45:57.058 [main] INFO   o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.sber.SberCoffee.SberCoffeeApplication for test class ru.sber.SberCoffee.SberCoffeeApplicationTests
+22.09.2023 12:45:57.533 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 12:45:57.579 [main] INFO   r.s.S.SberCoffeeApplicationTests - Starting SberCoffeeApplicationTests using Java 17.0.6 with PID 13032 (started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 12:45:57.581 [main] INFO   r.s.S.SberCoffeeApplicationTests - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 12:45:58.308 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 12:45:58.394 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 6 JPA repository interfaces.
+22.09.2023 12:45:59.370 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 12:45:59.464 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 12:45:59.468 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 12:45:59.681 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 12:45:59.708 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 12:45:59.734 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 12:46:00.065 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7dddfc35
+22.09.2023 12:46:00.068 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 12:46:00.560 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 12:46:01.416 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 12:46:01.566 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 12:46:02.448 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 12:46:02.982 [main] INFO   r.s.S.SberCoffeeApplicationTests - Started SberCoffeeApplicationTests in 5.72 seconds (process running for 9.353)
+22.09.2023 12:46:03.078 [main] INFO   r.s.S.c.ItemController - Retrieved item with ID 1
+22.09.2023 12:46:03.082 [main] INFO   r.s.S.c.ItemController - Retrieved item by name: Coffee
+22.09.2023 12:46:03.086 [main] INFO   r.s.S.c.ItemController - Retrieved 2 items successfully
+22.09.2023 12:46:03.091 [main] INFO   r.s.S.c.ItemController - Updated item with ID 1
+22.09.2023 12:46:03.095 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found for deletion
+22.09.2023 12:46:03.098 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found for update
+22.09.2023 12:46:03.101 [main] WARN   r.s.S.c.ItemController - Received request with null item
+22.09.2023 12:46:03.105 [main] WARN   r.s.S.c.ItemController - Item with name 'Tea' not found
+22.09.2023 12:46:03.108 [main] INFO   r.s.S.c.ItemController - Created item with ID 1
+22.09.2023 12:46:03.111 [main] INFO   r.s.S.c.ItemController - Deleted item with ID 1
+22.09.2023 12:46:03.115 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found
+22.09.2023 12:46:03.123 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 12:46:03.126 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 12:46:03.137 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 12:54:17.028 [main] INFO   r.s.S.c.StatusController - Status created successfully: Status(id=1, name=Active)
+22.09.2023 12:54:17.073 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Update failed.
+22.09.2023 12:54:17.079 [main] WARN   r.s.S.c.StatusController - Status doesn't exist. Requested statusId: 1
+22.09.2023 12:54:17.085 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Deletion failed.
+22.09.2023 12:54:17.091 [main] INFO   r.s.S.c.StatusController - Status updated successfully: Status(id=1, name=Active)
+22.09.2023 12:54:17.098 [main] INFO   r.s.S.c.StatusController - Status with ID 1 deleted successfully
+22.09.2023 12:54:17.103 [main] WARN   r.s.S.c.StatusController - Sent body is null
+22.09.2023 12:54:17.108 [main] INFO   r.s.S.c.StatusController - List of statuses sent successfully [Status(id=1, name=Active), Status(id=2, name=Inactive)] 
+22.09.2023 12:54:17.113 [main] INFO   r.s.S.c.StatusController - Requested status Status(id=1, name=Active)
+22.09.2023 12:54:17.295 [main] INFO   o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.sber.SberCoffee.SberCoffeeApplicationTests]: SberCoffeeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22.09.2023 12:54:17.466 [main] INFO   o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.sber.SberCoffee.SberCoffeeApplication for test class ru.sber.SberCoffee.SberCoffeeApplicationTests
+22.09.2023 12:54:18.098 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 12:54:18.142 [main] INFO   r.s.S.SberCoffeeApplicationTests - Starting SberCoffeeApplicationTests using Java 17.0.6 with PID 22340 (started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 12:54:18.144 [main] INFO   r.s.S.SberCoffeeApplicationTests - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 12:54:18.905 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 12:54:18.987 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 6 JPA repository interfaces.
+22.09.2023 12:54:19.996 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 12:54:20.092 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 12:54:20.097 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 12:54:20.327 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 12:54:20.338 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 12:54:20.370 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 12:54:20.648 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@185339ed
+22.09.2023 12:54:20.651 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 12:54:21.095 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 12:54:21.871 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 12:54:22.026 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 12:54:22.886 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 12:54:23.409 [main] INFO   r.s.S.SberCoffeeApplicationTests - Started SberCoffeeApplicationTests in 5.648 seconds (process running for 9.431)
+22.09.2023 12:54:23.510 [main] INFO   r.s.S.c.ItemController - Retrieved item with ID 1
+22.09.2023 12:54:23.514 [main] INFO   r.s.S.c.ItemController - Retrieved item by name: Coffee
+22.09.2023 12:54:23.519 [main] INFO   r.s.S.c.ItemController - Retrieved 2 items successfully
+22.09.2023 12:54:23.523 [main] INFO   r.s.S.c.ItemController - Updated item with ID 1
+22.09.2023 12:54:23.527 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found for deletion
+22.09.2023 12:54:23.532 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found for update
+22.09.2023 12:54:23.535 [main] WARN   r.s.S.c.ItemController - Received request with null item
+22.09.2023 12:54:23.539 [main] WARN   r.s.S.c.ItemController - Item with name 'Tea' not found
+22.09.2023 12:54:23.543 [main] INFO   r.s.S.c.ItemController - Created item with ID 1
+22.09.2023 12:54:23.546 [main] INFO   r.s.S.c.ItemController - Deleted item with ID 1
+22.09.2023 12:54:23.549 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found
+22.09.2023 12:54:23.602 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found. Deletion failed.
+22.09.2023 12:54:23.607 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found. Update failed.
+22.09.2023 12:54:23.610 [main] WARN   r.s.S.c.PositionController - Sent body is null
+22.09.2023 12:54:23.613 [main] INFO   r.s.S.c.PositionController - Retrieved 2 positions
+22.09.2023 12:54:23.617 [main] INFO   r.s.S.c.PositionController - Position updated successfully: Position(id=1, name=Owner, description=null)
+22.09.2023 12:54:23.625 [main] INFO   r.s.S.c.PositionController - Position created successfully: Position(id=1, name=Manager, description=null)
+22.09.2023 12:54:23.629 [main] INFO   r.s.S.c.PositionController - Retrieved position by ID: 1
+22.09.2023 12:54:23.632 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found
+22.09.2023 12:54:23.635 [main] INFO   r.s.S.c.PositionController - Position with ID 1 deleted successfully
+22.09.2023 12:54:23.643 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 12:54:23.646 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 12:54:23.654 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 12:58:47.965 [main] INFO   r.s.S.c.StatusController - Status created successfully: Status(id=1, name=Active)
+22.09.2023 12:58:48.007 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Update failed.
+22.09.2023 12:58:48.012 [main] WARN   r.s.S.c.StatusController - Status doesn't exist. Requested statusId: 1
+22.09.2023 12:58:48.016 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Deletion failed.
+22.09.2023 12:58:48.022 [main] INFO   r.s.S.c.StatusController - Status updated successfully: Status(id=1, name=Active)
+22.09.2023 12:58:48.028 [main] INFO   r.s.S.c.StatusController - Status with ID 1 deleted successfully
+22.09.2023 12:58:48.033 [main] WARN   r.s.S.c.StatusController - Sent body is null
+22.09.2023 12:58:48.038 [main] INFO   r.s.S.c.StatusController - List of statuses sent successfully [Status(id=1, name=Active), Status(id=2, name=Inactive)] 
+22.09.2023 12:58:48.042 [main] INFO   r.s.S.c.StatusController - Requested status Status(id=1, name=Active)
+22.09.2023 12:58:48.194 [main] INFO   o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.sber.SberCoffee.SberCoffeeApplicationTests]: SberCoffeeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22.09.2023 12:58:48.363 [main] INFO   o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.sber.SberCoffee.SberCoffeeApplication for test class ru.sber.SberCoffee.SberCoffeeApplicationTests
+22.09.2023 12:58:48.886 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 12:58:48.924 [main] INFO   r.s.S.SberCoffeeApplicationTests - Starting SberCoffeeApplicationTests using Java 17.0.6 with PID 21276 (started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 12:58:48.926 [main] INFO   r.s.S.SberCoffeeApplicationTests - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 12:58:49.572 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 12:58:49.682 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92 ms. Found 6 JPA repository interfaces.
+22.09.2023 12:58:50.667 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 12:58:50.753 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 12:58:50.757 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 12:58:50.977 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 12:58:50.992 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 12:58:51.012 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 12:58:51.328 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4407b042
+22.09.2023 12:58:51.332 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 12:58:51.817 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 12:58:52.593 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 12:58:52.754 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 12:58:53.648 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 12:58:54.170 [main] INFO   r.s.S.SberCoffeeApplicationTests - Started SberCoffeeApplicationTests in 5.544 seconds (process running for 9.153)
+22.09.2023 12:58:54.279 [main] INFO   r.s.S.c.ItemController - Retrieved item with ID 1
+22.09.2023 12:58:54.283 [main] INFO   r.s.S.c.ItemController - Retrieved item by name: Coffee
+22.09.2023 12:58:54.286 [main] INFO   r.s.S.c.ItemController - Retrieved 2 items successfully
+22.09.2023 12:58:54.291 [main] INFO   r.s.S.c.ItemController - Updated item with ID 1
+22.09.2023 12:58:54.295 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found for deletion
+22.09.2023 12:58:54.299 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found for update
+22.09.2023 12:58:54.302 [main] WARN   r.s.S.c.ItemController - Received request with null item
+22.09.2023 12:58:54.305 [main] WARN   r.s.S.c.ItemController - Item with name 'Tea' not found
+22.09.2023 12:58:54.308 [main] INFO   r.s.S.c.ItemController - Created item with ID 1
+22.09.2023 12:58:54.312 [main] INFO   r.s.S.c.ItemController - Deleted item with ID 1
+22.09.2023 12:58:54.315 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found
+22.09.2023 12:58:54.365 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 12:58:54.369 [main] INFO   r.s.S.c.ClientController - Client with ID 1 found
+22.09.2023 12:58:54.372 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 12:58:54.376 [main] WARN   r.s.S.c.ClientController - Received a null client request
+22.09.2023 12:58:54.379 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 12:58:54.383 [main] INFO   r.s.S.c.ClientController - Updated client with ID 1
+22.09.2023 12:58:54.387 [main] INFO   r.s.S.c.ClientController - Deleted client with ID 1
+22.09.2023 12:58:54.391 [main] INFO   r.s.S.c.ClientController - Returned 2 clients
+22.09.2023 12:58:54.395 [main] INFO   r.s.S.c.ClientController - Created client with ID 1
+22.09.2023 12:58:54.451 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found. Deletion failed.
+22.09.2023 12:58:54.455 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found. Update failed.
+22.09.2023 12:58:54.458 [main] WARN   r.s.S.c.PositionController - Sent body is null
+22.09.2023 12:58:54.463 [main] INFO   r.s.S.c.PositionController - Retrieved 2 positions
+22.09.2023 12:58:54.467 [main] INFO   r.s.S.c.PositionController - Position updated successfully: Position(id=1, name=Owner, description=null)
+22.09.2023 12:58:54.475 [main] INFO   r.s.S.c.PositionController - Position created successfully: Position(id=1, name=Manager, description=null)
+22.09.2023 12:58:54.479 [main] INFO   r.s.S.c.PositionController - Retrieved position by ID: 1
+22.09.2023 12:58:54.483 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found
+22.09.2023 12:58:54.486 [main] INFO   r.s.S.c.PositionController - Position with ID 1 deleted successfully
+22.09.2023 12:58:54.499 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 12:58:54.504 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 12:58:54.518 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 13:01:52.889 [main] INFO   r.s.S.c.StaffController - Deleted staff member with ID: 1
+22.09.2023 13:01:52.933 [main] INFO   r.s.S.c.StaffController - Retrieved staff by ID: 1
+22.09.2023 13:01:52.956 [main] INFO   r.s.S.c.StaffController - Updated staff member: StaffResponseDTO(id=1, name=Jane, surname=Smith, patronymic=JaneSmith, position=Clerk, phoneNumber=9876543210, address=456 Elm St)
+22.09.2023 13:01:52.980 [main] INFO   r.s.S.c.StaffController - Created staff member: StaffResponseDTO(id=1, name=John, surname=Doe, patronymic=JohnDoe, position=Manager, phoneNumber=1234567890, address=123 Main St)
+22.09.2023 13:01:52.988 [main] INFO   r.s.S.c.StaffController - Retrieved 2 staff members
+22.09.2023 13:01:52.993 [main] WARN   r.s.S.c.StaffController - Staff with ID 1 not found
+22.09.2023 13:01:52.998 [main] WARN   r.s.S.c.StaffController - Sent body is null
+22.09.2023 13:01:53.003 [main] WARN   r.s.S.c.StaffController - Invalid position ID: 999
+22.09.2023 13:01:53.008 [main] WARN   r.s.S.c.StaffController - Invalid position ID: 999
+22.09.2023 13:01:53.015 [main] WARN   r.s.S.c.StaffController - Sent body is null
+22.09.2023 13:01:53.021 [main] WARN   r.s.S.c.StaffController - Staff with ID 1 not found. Deletion failed.
+22.09.2023 13:01:53.028 [main] WARN   r.s.S.c.StaffController - Staff with ID 1 not found. Update failed.
+22.09.2023 13:01:53.033 [main] WARN   r.s.S.c.StaffController - List of staff is empty
+22.09.2023 13:01:53.091 [main] INFO   r.s.S.c.StatusController - Status created successfully: Status(id=1, name=Active)
+22.09.2023 13:01:53.101 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Update failed.
+22.09.2023 13:01:53.109 [main] WARN   r.s.S.c.StatusController - Status doesn't exist. Requested statusId: 1
+22.09.2023 13:01:53.115 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Deletion failed.
+22.09.2023 13:01:53.120 [main] INFO   r.s.S.c.StatusController - Status updated successfully: Status(id=1, name=Active)
+22.09.2023 13:01:53.126 [main] INFO   r.s.S.c.StatusController - Status with ID 1 deleted successfully
+22.09.2023 13:01:53.130 [main] WARN   r.s.S.c.StatusController - Sent body is null
+22.09.2023 13:01:53.135 [main] INFO   r.s.S.c.StatusController - List of statuses sent successfully [Status(id=1, name=Active), Status(id=2, name=Inactive)] 
+22.09.2023 13:01:53.140 [main] INFO   r.s.S.c.StatusController - Requested status Status(id=1, name=Active)
+22.09.2023 13:01:53.307 [main] INFO   o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.sber.SberCoffee.SberCoffeeApplicationTests]: SberCoffeeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22.09.2023 13:01:53.494 [main] INFO   o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.sber.SberCoffee.SberCoffeeApplication for test class ru.sber.SberCoffee.SberCoffeeApplicationTests
+22.09.2023 13:01:54.005 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 13:01:54.050 [main] INFO   r.s.S.SberCoffeeApplicationTests - Starting SberCoffeeApplicationTests using Java 17.0.6 with PID 10328 (started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 13:01:54.052 [main] INFO   r.s.S.SberCoffeeApplicationTests - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 13:01:54.703 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 13:01:54.760 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 6 JPA repository interfaces.
+22.09.2023 13:01:55.717 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 13:01:55.813 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 13:01:55.817 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 13:01:56.009 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 13:01:56.031 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 13:01:56.052 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 13:01:56.300 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@47ffdbba
+22.09.2023 13:01:56.303 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 13:01:56.797 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 13:01:57.595 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 13:01:57.737 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 13:01:58.601 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 13:01:59.142 [main] INFO   r.s.S.SberCoffeeApplicationTests - Started SberCoffeeApplicationTests in 5.419 seconds (process running for 9.293)
+22.09.2023 13:01:59.249 [main] INFO   r.s.S.c.ItemController - Retrieved item with ID 1
+22.09.2023 13:01:59.252 [main] INFO   r.s.S.c.ItemController - Retrieved item by name: Coffee
+22.09.2023 13:01:59.256 [main] INFO   r.s.S.c.ItemController - Retrieved 2 items successfully
+22.09.2023 13:01:59.260 [main] INFO   r.s.S.c.ItemController - Updated item with ID 1
+22.09.2023 13:01:59.264 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found for deletion
+22.09.2023 13:01:59.268 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found for update
+22.09.2023 13:01:59.271 [main] WARN   r.s.S.c.ItemController - Received request with null item
+22.09.2023 13:01:59.275 [main] WARN   r.s.S.c.ItemController - Item with name 'Tea' not found
+22.09.2023 13:01:59.279 [main] INFO   r.s.S.c.ItemController - Created item with ID 1
+22.09.2023 13:01:59.282 [main] INFO   r.s.S.c.ItemController - Deleted item with ID 1
+22.09.2023 13:01:59.286 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found
+22.09.2023 13:01:59.338 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 13:01:59.342 [main] INFO   r.s.S.c.ClientController - Client with ID 1 found
+22.09.2023 13:01:59.346 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 13:01:59.349 [main] WARN   r.s.S.c.ClientController - Received a null client request
+22.09.2023 13:01:59.352 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 13:01:59.356 [main] INFO   r.s.S.c.ClientController - Updated client with ID 1
+22.09.2023 13:01:59.359 [main] INFO   r.s.S.c.ClientController - Deleted client with ID 1
+22.09.2023 13:01:59.362 [main] INFO   r.s.S.c.ClientController - Returned 2 clients
+22.09.2023 13:01:59.366 [main] INFO   r.s.S.c.ClientController - Created client with ID 1
+22.09.2023 13:01:59.371 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found. Deletion failed.
+22.09.2023 13:01:59.375 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found. Update failed.
+22.09.2023 13:01:59.377 [main] WARN   r.s.S.c.PositionController - Sent body is null
+22.09.2023 13:01:59.381 [main] INFO   r.s.S.c.PositionController - Retrieved 2 positions
+22.09.2023 13:01:59.384 [main] INFO   r.s.S.c.PositionController - Position updated successfully: Position(id=1, name=Owner, description=null)
+22.09.2023 13:01:59.392 [main] INFO   r.s.S.c.PositionController - Position created successfully: Position(id=1, name=Manager, description=null)
+22.09.2023 13:01:59.395 [main] INFO   r.s.S.c.PositionController - Retrieved position by ID: 1
+22.09.2023 13:01:59.398 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found
+22.09.2023 13:01:59.401 [main] INFO   r.s.S.c.PositionController - Position with ID 1 deleted successfully
+22.09.2023 13:01:59.413 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 13:01:59.417 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 13:01:59.428 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 13:08:21.239 [main] INFO   r.s.S.c.StaffController - Deleted staff member with ID: 1
+22.09.2023 13:08:21.282 [main] INFO   r.s.S.c.StaffController - Retrieved staff by ID: 1
+22.09.2023 13:08:21.293 [main] INFO   r.s.S.c.StaffController - Updated staff member: StaffResponseDTO(id=1, name=Jane, surname=Smith, patronymic=JaneSmith, position=Clerk, phoneNumber=9876543210, address=456 Elm St)
+22.09.2023 13:08:21.312 [main] INFO   r.s.S.c.StaffController - Created staff member: StaffResponseDTO(id=1, name=John, surname=Doe, patronymic=JohnDoe, position=Manager, phoneNumber=1234567890, address=123 Main St)
+22.09.2023 13:08:21.319 [main] INFO   r.s.S.c.StaffController - Retrieved 2 staff members
+22.09.2023 13:08:21.324 [main] WARN   r.s.S.c.StaffController - Staff with ID 1 not found
+22.09.2023 13:08:21.329 [main] WARN   r.s.S.c.StaffController - Sent body is null
+22.09.2023 13:08:21.335 [main] WARN   r.s.S.c.StaffController - Invalid position ID: 999
+22.09.2023 13:08:21.340 [main] WARN   r.s.S.c.StaffController - Invalid position ID: 999
+22.09.2023 13:08:21.347 [main] WARN   r.s.S.c.StaffController - Sent body is null
+22.09.2023 13:08:21.354 [main] WARN   r.s.S.c.StaffController - Staff with ID 1 not found. Deletion failed.
+22.09.2023 13:08:21.359 [main] WARN   r.s.S.c.StaffController - Staff with ID 1 not found. Update failed.
+22.09.2023 13:08:21.364 [main] WARN   r.s.S.c.StaffController - List of staff is empty
+22.09.2023 13:08:21.423 [main] INFO   r.s.S.c.StatusController - Status created successfully: Status(id=1, name=Active)
+22.09.2023 13:08:21.435 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Update failed.
+22.09.2023 13:08:21.440 [main] WARN   r.s.S.c.StatusController - Status doesn't exist. Requested statusId: 1
+22.09.2023 13:08:21.446 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Deletion failed.
+22.09.2023 13:08:21.452 [main] INFO   r.s.S.c.StatusController - Status updated successfully: Status(id=1, name=Active)
+22.09.2023 13:08:21.457 [main] INFO   r.s.S.c.StatusController - Status with ID 1 deleted successfully
+22.09.2023 13:08:21.461 [main] WARN   r.s.S.c.StatusController - Sent body is null
+22.09.2023 13:08:21.466 [main] INFO   r.s.S.c.StatusController - List of statuses sent successfully [Status(id=1, name=Active), Status(id=2, name=Inactive)] 
+22.09.2023 13:08:21.471 [main] INFO   r.s.S.c.StatusController - Requested status Status(id=1, name=Active)
+22.09.2023 13:08:21.634 [main] INFO   o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.sber.SberCoffee.SberCoffeeApplicationTests]: SberCoffeeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22.09.2023 13:08:21.812 [main] INFO   o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.sber.SberCoffee.SberCoffeeApplication for test class ru.sber.SberCoffee.SberCoffeeApplicationTests
+22.09.2023 13:08:22.358 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 13:08:22.395 [main] INFO   r.s.S.SberCoffeeApplicationTests - Starting SberCoffeeApplicationTests using Java 17.0.6 with PID 18408 (started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 13:08:22.396 [main] INFO   r.s.S.SberCoffeeApplicationTests - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 13:08:23.100 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 13:08:23.172 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 6 JPA repository interfaces.
+22.09.2023 13:08:24.133 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 13:08:24.214 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 13:08:24.217 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 13:08:24.457 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 13:08:24.474 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 13:08:24.499 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 13:08:24.815 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7c9ea1d0
+22.09.2023 13:08:24.817 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 13:08:25.294 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 13:08:26.092 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 13:08:26.250 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 13:08:27.112 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 13:08:27.658 [main] INFO   r.s.S.SberCoffeeApplicationTests - Started SberCoffeeApplicationTests in 5.578 seconds (process running for 9.3)
+22.09.2023 13:08:27.749 [main] INFO   r.s.S.c.ItemController - Retrieved item with ID 1
+22.09.2023 13:08:27.753 [main] INFO   r.s.S.c.ItemController - Retrieved item by name: Coffee
+22.09.2023 13:08:27.756 [main] INFO   r.s.S.c.ItemController - Retrieved 2 items successfully
+22.09.2023 13:08:27.760 [main] INFO   r.s.S.c.ItemController - Updated item with ID 1
+22.09.2023 13:08:27.764 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found for deletion
+22.09.2023 13:08:27.768 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found for update
+22.09.2023 13:08:27.772 [main] WARN   r.s.S.c.ItemController - Received request with null item
+22.09.2023 13:08:27.775 [main] WARN   r.s.S.c.ItemController - Item with name 'Tea' not found
+22.09.2023 13:08:27.777 [main] INFO   r.s.S.c.ItemController - Created item with ID 1
+22.09.2023 13:08:27.781 [main] INFO   r.s.S.c.ItemController - Deleted item with ID 1
+22.09.2023 13:08:27.784 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found
+22.09.2023 13:08:27.846 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 13:08:27.850 [main] INFO   r.s.S.c.ClientController - Client with ID 1 found
+22.09.2023 13:08:27.854 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 13:08:27.857 [main] WARN   r.s.S.c.ClientController - Received a null client request
+22.09.2023 13:08:27.861 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 13:08:27.864 [main] INFO   r.s.S.c.ClientController - Updated client with ID 1
+22.09.2023 13:08:27.867 [main] INFO   r.s.S.c.ClientController - Deleted client with ID 1
+22.09.2023 13:08:27.871 [main] INFO   r.s.S.c.ClientController - Returned 2 clients
+22.09.2023 13:08:27.874 [main] INFO   r.s.S.c.ClientController - Created client with ID 1
+22.09.2023 13:08:27.945 [main] INFO   r.s.S.c.CoffeeOrderController - Updated coffee order with ID 1
+22.09.2023 13:08:27.970 [main] INFO   r.s.S.c.CoffeeOrderController - Coffee order with ID 1 found
+22.09.2023 13:08:27.983 [main] WARN   r.s.S.c.CoffeeOrderController - Coffee order with ID 1 not found
+22.09.2023 13:08:27.988 [main] WARN   r.s.S.c.CoffeeOrderController - No coffee orders found
+22.09.2023 13:08:27.992 [main] INFO   r.s.S.c.CoffeeOrderController - Deleted coffee order with ID 1
+22.09.2023 13:08:28.022 [main] WARN   r.s.S.c.CoffeeOrderController - Coffee order with ID 1 not found
+22.09.2023 13:08:28.028 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found. Deletion failed.
+22.09.2023 13:08:28.031 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found. Update failed.
+22.09.2023 13:08:28.034 [main] WARN   r.s.S.c.PositionController - Sent body is null
+22.09.2023 13:08:28.038 [main] INFO   r.s.S.c.PositionController - Retrieved 2 positions
+22.09.2023 13:08:28.041 [main] INFO   r.s.S.c.PositionController - Position updated successfully: Position(id=1, name=Owner, description=null)
+22.09.2023 13:08:28.049 [main] INFO   r.s.S.c.PositionController - Position created successfully: Position(id=1, name=Manager, description=null)
+22.09.2023 13:08:28.053 [main] INFO   r.s.S.c.PositionController - Retrieved position by ID: 1
+22.09.2023 13:08:28.056 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found
+22.09.2023 13:08:28.062 [main] INFO   r.s.S.c.PositionController - Position with ID 1 deleted successfully
+22.09.2023 13:08:28.076 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 13:08:28.080 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 13:08:28.089 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 13:13:30.672 [main] INFO   r.s.S.c.StaffController - Deleted staff member with ID: 1
+22.09.2023 13:13:30.713 [main] INFO   r.s.S.c.StaffController - Retrieved staff by ID: 1
+22.09.2023 13:13:30.723 [main] INFO   r.s.S.c.StaffController - Updated staff member: StaffResponseDTO(id=1, name=Jane, surname=Smith, patronymic=JaneSmith, position=Clerk, phoneNumber=9876543210, address=456 Elm St)
+22.09.2023 13:13:30.744 [main] INFO   r.s.S.c.StaffController - Created staff member: StaffResponseDTO(id=1, name=John, surname=Doe, patronymic=JohnDoe, position=Manager, phoneNumber=1234567890, address=123 Main St)
+22.09.2023 13:13:30.752 [main] INFO   r.s.S.c.StaffController - Retrieved 2 staff members
+22.09.2023 13:13:30.757 [main] WARN   r.s.S.c.StaffController - Staff with ID 1 not found
+22.09.2023 13:13:30.764 [main] WARN   r.s.S.c.StaffController - Sent body is null
+22.09.2023 13:13:30.770 [main] WARN   r.s.S.c.StaffController - Invalid position ID: 999
+22.09.2023 13:13:30.777 [main] WARN   r.s.S.c.StaffController - Invalid position ID: 999
+22.09.2023 13:13:30.783 [main] WARN   r.s.S.c.StaffController - Sent body is null
+22.09.2023 13:13:30.789 [main] WARN   r.s.S.c.StaffController - Staff with ID 1 not found. Deletion failed.
+22.09.2023 13:13:30.794 [main] WARN   r.s.S.c.StaffController - Staff with ID 1 not found. Update failed.
+22.09.2023 13:13:30.799 [main] WARN   r.s.S.c.StaffController - List of staff is empty
+22.09.2023 13:13:30.847 [main] INFO   r.s.S.c.StatusController - Status created successfully: Status(id=1, name=Active)
+22.09.2023 13:13:30.856 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Update failed.
+22.09.2023 13:13:30.862 [main] WARN   r.s.S.c.StatusController - Status doesn't exist. Requested statusId: 1
+22.09.2023 13:13:30.866 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Deletion failed.
+22.09.2023 13:13:30.870 [main] INFO   r.s.S.c.StatusController - Status updated successfully: Status(id=1, name=Active)
+22.09.2023 13:13:30.874 [main] INFO   r.s.S.c.StatusController - Status with ID 1 deleted successfully
+22.09.2023 13:13:30.878 [main] WARN   r.s.S.c.StatusController - Sent body is null
+22.09.2023 13:13:30.883 [main] INFO   r.s.S.c.StatusController - List of statuses sent successfully [Status(id=1, name=Active), Status(id=2, name=Inactive)] 
+22.09.2023 13:13:30.888 [main] INFO   r.s.S.c.StatusController - Requested status Status(id=1, name=Active)
+22.09.2023 13:13:31.074 [main] INFO   o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.sber.SberCoffee.SberCoffeeApplicationTests]: SberCoffeeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22.09.2023 13:13:31.249 [main] INFO   o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.sber.SberCoffee.SberCoffeeApplication for test class ru.sber.SberCoffee.SberCoffeeApplicationTests
+22.09.2023 13:13:31.722 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 13:13:31.757 [main] INFO   r.s.S.SberCoffeeApplicationTests - Starting SberCoffeeApplicationTests using Java 17.0.6 with PID 9632 (started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 13:13:31.759 [main] INFO   r.s.S.SberCoffeeApplicationTests - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 13:13:32.413 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 13:13:32.483 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 6 JPA repository interfaces.
+22.09.2023 13:13:33.415 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 13:13:33.492 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 13:13:33.495 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 13:13:33.672 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 13:13:33.692 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 13:13:33.710 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 13:13:33.959 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6644bdf5
+22.09.2023 13:13:33.964 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 13:13:34.410 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 13:13:35.151 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 13:13:35.294 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 13:13:36.161 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 13:13:36.718 [main] INFO   r.s.S.SberCoffeeApplicationTests - Started SberCoffeeApplicationTests in 5.254 seconds (process running for 9.06)
+22.09.2023 13:13:36.829 [main] INFO   r.s.S.c.ItemController - Retrieved item with ID 1
+22.09.2023 13:13:36.833 [main] INFO   r.s.S.c.ItemController - Retrieved item by name: Coffee
+22.09.2023 13:13:36.837 [main] INFO   r.s.S.c.ItemController - Retrieved 2 items successfully
+22.09.2023 13:13:36.840 [main] INFO   r.s.S.c.ItemController - Updated item with ID 1
+22.09.2023 13:13:36.844 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found for deletion
+22.09.2023 13:13:36.847 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found for update
+22.09.2023 13:13:36.850 [main] WARN   r.s.S.c.ItemController - Received request with null item
+22.09.2023 13:13:36.853 [main] WARN   r.s.S.c.ItemController - Item with name 'Tea' not found
+22.09.2023 13:13:36.856 [main] INFO   r.s.S.c.ItemController - Created item with ID 1
+22.09.2023 13:13:36.860 [main] INFO   r.s.S.c.ItemController - Deleted item with ID 1
+22.09.2023 13:13:36.862 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found
+22.09.2023 13:13:36.920 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 13:13:36.925 [main] INFO   r.s.S.c.ClientController - Client with ID 1 found
+22.09.2023 13:13:36.930 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 13:13:36.933 [main] WARN   r.s.S.c.ClientController - Received a null client request
+22.09.2023 13:13:36.937 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 13:13:36.941 [main] INFO   r.s.S.c.ClientController - Updated client with ID 1
+22.09.2023 13:13:36.945 [main] INFO   r.s.S.c.ClientController - Deleted client with ID 1
+22.09.2023 13:13:36.948 [main] INFO   r.s.S.c.ClientController - Returned 2 clients
+22.09.2023 13:13:36.952 [main] INFO   r.s.S.c.ClientController - Created client with ID 1
+22.09.2023 13:13:37.046 [main] INFO   r.s.S.c.CoffeeOrderController - Updated coffee order with ID 1
+22.09.2023 13:13:37.060 [main] INFO   r.s.S.c.CoffeeOrderController - Coffee order with ID 1 found
+22.09.2023 13:13:37.077 [main] WARN   r.s.S.c.CoffeeOrderController - Coffee order with ID 1 not found
+22.09.2023 13:13:37.082 [main] WARN   r.s.S.c.CoffeeOrderController - No coffee orders found
+22.09.2023 13:13:37.087 [main] INFO   r.s.S.c.CoffeeOrderController - Deleted coffee order with ID 1
+22.09.2023 13:13:37.110 [main] WARN   r.s.S.c.CoffeeOrderController - Coffee order with ID 1 not found
+22.09.2023 13:13:37.118 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found. Deletion failed.
+22.09.2023 13:13:37.122 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found. Update failed.
+22.09.2023 13:13:37.125 [main] WARN   r.s.S.c.PositionController - Sent body is null
+22.09.2023 13:13:37.128 [main] INFO   r.s.S.c.PositionController - Retrieved 2 positions
+22.09.2023 13:13:37.132 [main] INFO   r.s.S.c.PositionController - Position updated successfully: Position(id=1, name=Owner, description=null)
+22.09.2023 13:13:37.140 [main] INFO   r.s.S.c.PositionController - Position created successfully: Position(id=1, name=Manager, description=null)
+22.09.2023 13:13:37.143 [main] INFO   r.s.S.c.PositionController - Retrieved position by ID: 1
+22.09.2023 13:13:37.146 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found
+22.09.2023 13:13:37.150 [main] INFO   r.s.S.c.PositionController - Position with ID 1 deleted successfully
+22.09.2023 13:13:37.159 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 13:13:37.162 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 13:13:37.172 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 13:17:17.134 [main] INFO   r.s.S.c.StaffController - Deleted staff member with ID: 1
+22.09.2023 13:17:17.176 [main] INFO   r.s.S.c.StaffController - Retrieved staff by ID: 1
+22.09.2023 13:17:17.187 [main] INFO   r.s.S.c.StaffController - Updated staff member: StaffResponseDTO(id=1, name=Jane, surname=Smith, patronymic=JaneSmith, position=Clerk, phoneNumber=9876543210, address=456 Elm St)
+22.09.2023 13:17:17.206 [main] INFO   r.s.S.c.StaffController - Created staff member: StaffResponseDTO(id=1, name=John, surname=Doe, patronymic=JohnDoe, position=Manager, phoneNumber=1234567890, address=123 Main St)
+22.09.2023 13:17:17.212 [main] INFO   r.s.S.c.StaffController - Retrieved 2 staff members
+22.09.2023 13:17:17.218 [main] WARN   r.s.S.c.StaffController - Staff with ID 1 not found
+22.09.2023 13:17:17.224 [main] WARN   r.s.S.c.StaffController - Sent body is null
+22.09.2023 13:17:17.231 [main] WARN   r.s.S.c.StaffController - Invalid position ID: 999
+22.09.2023 13:17:17.237 [main] WARN   r.s.S.c.StaffController - Invalid position ID: 999
+22.09.2023 13:17:17.243 [main] WARN   r.s.S.c.StaffController - Sent body is null
+22.09.2023 13:17:17.248 [main] WARN   r.s.S.c.StaffController - Staff with ID 1 not found. Deletion failed.
+22.09.2023 13:17:17.254 [main] WARN   r.s.S.c.StaffController - Staff with ID 1 not found. Update failed.
+22.09.2023 13:17:17.258 [main] WARN   r.s.S.c.StaffController - List of staff is empty
+22.09.2023 13:17:17.308 [main] INFO   r.s.S.c.StatusController - Status created successfully: Status(id=1, name=Active)
+22.09.2023 13:17:17.316 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Update failed.
+22.09.2023 13:17:17.322 [main] WARN   r.s.S.c.StatusController - Status doesn't exist. Requested statusId: 1
+22.09.2023 13:17:17.326 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Deletion failed.
+22.09.2023 13:17:17.330 [main] INFO   r.s.S.c.StatusController - Status updated successfully: Status(id=1, name=Active)
+22.09.2023 13:17:17.335 [main] INFO   r.s.S.c.StatusController - Status with ID 1 deleted successfully
+22.09.2023 13:17:17.338 [main] WARN   r.s.S.c.StatusController - Sent body is null
+22.09.2023 13:17:17.342 [main] INFO   r.s.S.c.StatusController - List of statuses sent successfully [Status(id=1, name=Active), Status(id=2, name=Inactive)] 
+22.09.2023 13:17:17.346 [main] INFO   r.s.S.c.StatusController - Requested status Status(id=1, name=Active)
+22.09.2023 13:17:17.512 [main] INFO   o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.sber.SberCoffee.SberCoffeeApplicationTests]: SberCoffeeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22.09.2023 13:17:17.690 [main] INFO   o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.sber.SberCoffee.SberCoffeeApplication for test class ru.sber.SberCoffee.SberCoffeeApplicationTests
+22.09.2023 13:17:18.212 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 13:17:18.253 [main] INFO   r.s.S.SberCoffeeApplicationTests - Starting SberCoffeeApplicationTests using Java 17.0.6 with PID 2640 (started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 13:17:18.255 [main] INFO   r.s.S.SberCoffeeApplicationTests - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 13:17:18.937 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 13:17:19.000 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 6 JPA repository interfaces.
+22.09.2023 13:17:19.940 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 13:17:20.037 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 13:17:20.040 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 13:17:20.264 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 13:17:20.289 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 13:17:20.315 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 13:17:20.607 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@57b33c29
+22.09.2023 13:17:20.610 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 13:17:21.073 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 13:17:21.858 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 13:17:22.014 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 13:17:22.861 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 13:17:23.402 [main] INFO   r.s.S.SberCoffeeApplicationTests - Started SberCoffeeApplicationTests in 5.463 seconds (process running for 9.233)
+22.09.2023 13:17:23.499 [main] INFO   r.s.S.c.ItemController - Retrieved item with ID 1
+22.09.2023 13:17:23.503 [main] INFO   r.s.S.c.ItemController - Retrieved item by name: Coffee
+22.09.2023 13:17:23.507 [main] INFO   r.s.S.c.ItemController - Retrieved 2 items successfully
+22.09.2023 13:17:23.511 [main] INFO   r.s.S.c.ItemController - Updated item with ID 1
+22.09.2023 13:17:23.514 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found for deletion
+22.09.2023 13:17:23.518 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found for update
+22.09.2023 13:17:23.521 [main] WARN   r.s.S.c.ItemController - Received request with null item
+22.09.2023 13:17:23.524 [main] WARN   r.s.S.c.ItemController - Item with name 'Tea' not found
+22.09.2023 13:17:23.528 [main] INFO   r.s.S.c.ItemController - Created item with ID 1
+22.09.2023 13:17:23.531 [main] INFO   r.s.S.c.ItemController - Deleted item with ID 1
+22.09.2023 13:17:23.535 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found
+22.09.2023 13:17:23.614 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 13:17:23.621 [main] INFO   r.s.S.c.ClientController - Client with ID 1 found
+22.09.2023 13:17:23.625 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 13:17:23.629 [main] WARN   r.s.S.c.ClientController - Received a null client request
+22.09.2023 13:17:23.633 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 13:17:23.638 [main] INFO   r.s.S.c.ClientController - Updated client with ID 1
+22.09.2023 13:17:23.643 [main] INFO   r.s.S.c.ClientController - Deleted client with ID 1
+22.09.2023 13:17:23.646 [main] INFO   r.s.S.c.ClientController - Returned 2 clients
+22.09.2023 13:17:23.651 [main] INFO   r.s.S.c.ClientController - Created client with ID 1
+22.09.2023 13:17:23.720 [main] INFO   r.s.S.c.CoffeeOrderController - Updated coffee order with ID 1
+22.09.2023 13:17:23.729 [main] INFO   r.s.S.c.CoffeeOrderController - Coffee order with ID 1 found
+22.09.2023 13:17:23.742 [main] WARN   r.s.S.c.CoffeeOrderController - Coffee order with ID 1 not found
+22.09.2023 13:17:23.747 [main] WARN   r.s.S.c.CoffeeOrderController - No coffee orders found
+22.09.2023 13:17:23.752 [main] INFO   r.s.S.c.CoffeeOrderController - Deleted coffee order with ID 1
+22.09.2023 13:17:23.770 [main] WARN   r.s.S.c.CoffeeOrderController - Coffee order with ID 1 not found
+22.09.2023 13:17:23.774 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found. Deletion failed.
+22.09.2023 13:17:23.777 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found. Update failed.
+22.09.2023 13:17:23.780 [main] WARN   r.s.S.c.PositionController - Sent body is null
+22.09.2023 13:17:23.783 [main] INFO   r.s.S.c.PositionController - Retrieved 2 positions
+22.09.2023 13:17:23.787 [main] INFO   r.s.S.c.PositionController - Position updated successfully: Position(id=1, name=Owner, description=null)
+22.09.2023 13:17:23.793 [main] INFO   r.s.S.c.PositionController - Position created successfully: Position(id=1, name=Manager, description=null)
+22.09.2023 13:17:23.795 [main] INFO   r.s.S.c.PositionController - Retrieved position by ID: 1
+22.09.2023 13:17:23.798 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found
+22.09.2023 13:17:23.800 [main] INFO   r.s.S.c.PositionController - Position with ID 1 deleted successfully
+22.09.2023 13:17:23.810 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 13:17:23.813 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 13:17:23.819 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 13:23:08.981 [main] INFO   r.s.S.c.CoffeeOrderController - Created coffee order with ID: 1
+22.09.2023 13:23:23.228 [main] INFO   r.s.S.c.CoffeeOrderController - Created coffee order with ID: 1
+22.09.2023 13:24:11.741 [main] INFO   r.s.S.c.StaffController - Deleted staff member with ID: 1
+22.09.2023 13:24:11.784 [main] INFO   r.s.S.c.StaffController - Retrieved staff by ID: 1
+22.09.2023 13:24:11.794 [main] INFO   r.s.S.c.StaffController - Updated staff member: StaffResponseDTO(id=1, name=Jane, surname=Smith, patronymic=JaneSmith, position=Clerk, phoneNumber=9876543210, address=456 Elm St)
+22.09.2023 13:24:11.816 [main] INFO   r.s.S.c.StaffController - Created staff member: StaffResponseDTO(id=1, name=John, surname=Doe, patronymic=JohnDoe, position=Manager, phoneNumber=1234567890, address=123 Main St)
+22.09.2023 13:24:11.824 [main] INFO   r.s.S.c.StaffController - Retrieved 2 staff members
+22.09.2023 13:24:11.831 [main] WARN   r.s.S.c.StaffController - Staff with ID 1 not found
+22.09.2023 13:24:11.837 [main] WARN   r.s.S.c.StaffController - Sent body is null
+22.09.2023 13:24:11.842 [main] WARN   r.s.S.c.StaffController - Invalid position ID: 999
+22.09.2023 13:24:11.847 [main] WARN   r.s.S.c.StaffController - Invalid position ID: 999
+22.09.2023 13:24:11.854 [main] WARN   r.s.S.c.StaffController - Sent body is null
+22.09.2023 13:24:11.860 [main] WARN   r.s.S.c.StaffController - Staff with ID 1 not found. Deletion failed.
+22.09.2023 13:24:11.866 [main] WARN   r.s.S.c.StaffController - Staff with ID 1 not found. Update failed.
+22.09.2023 13:24:11.871 [main] WARN   r.s.S.c.StaffController - List of staff is empty
+22.09.2023 13:24:11.925 [main] INFO   r.s.S.c.StatusController - Status created successfully: Status(id=1, name=Active)
+22.09.2023 13:24:11.939 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Update failed.
+22.09.2023 13:24:11.945 [main] WARN   r.s.S.c.StatusController - Status doesn't exist. Requested statusId: 1
+22.09.2023 13:24:11.950 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Deletion failed.
+22.09.2023 13:24:11.954 [main] INFO   r.s.S.c.StatusController - Status updated successfully: Status(id=1, name=Active)
+22.09.2023 13:24:11.958 [main] INFO   r.s.S.c.StatusController - Status with ID 1 deleted successfully
+22.09.2023 13:24:11.962 [main] WARN   r.s.S.c.StatusController - Sent body is null
+22.09.2023 13:24:11.966 [main] INFO   r.s.S.c.StatusController - List of statuses sent successfully [Status(id=1, name=Active), Status(id=2, name=Inactive)] 
+22.09.2023 13:24:11.971 [main] INFO   r.s.S.c.StatusController - Requested status Status(id=1, name=Active)
+22.09.2023 13:24:12.144 [main] INFO   o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.sber.SberCoffee.SberCoffeeApplicationTests]: SberCoffeeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22.09.2023 13:24:12.324 [main] INFO   o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.sber.SberCoffee.SberCoffeeApplication for test class ru.sber.SberCoffee.SberCoffeeApplicationTests
+22.09.2023 13:24:12.876 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 13:24:12.918 [main] INFO   r.s.S.SberCoffeeApplicationTests - Starting SberCoffeeApplicationTests using Java 17.0.6 with PID 19696 (started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 13:24:12.919 [main] INFO   r.s.S.SberCoffeeApplicationTests - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 13:24:13.607 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 13:24:13.684 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 6 JPA repository interfaces.
+22.09.2023 13:24:14.651 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 13:24:14.750 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 13:24:14.754 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 13:24:14.976 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 13:24:14.998 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 13:24:15.017 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 13:24:15.335 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d404a3c
+22.09.2023 13:24:15.337 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 13:24:15.798 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 13:24:16.577 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 13:24:16.728 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 13:24:17.633 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 13:24:18.166 [main] INFO   r.s.S.SberCoffeeApplicationTests - Started SberCoffeeApplicationTests in 5.585 seconds (process running for 9.381)
+22.09.2023 13:24:18.281 [main] INFO   r.s.S.c.ItemController - Retrieved item with ID 1
+22.09.2023 13:24:18.285 [main] INFO   r.s.S.c.ItemController - Retrieved item by name: Coffee
+22.09.2023 13:24:18.289 [main] INFO   r.s.S.c.ItemController - Retrieved 2 items successfully
+22.09.2023 13:24:18.293 [main] INFO   r.s.S.c.ItemController - Updated item with ID 1
+22.09.2023 13:24:18.296 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found for deletion
+22.09.2023 13:24:18.299 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found for update
+22.09.2023 13:24:18.302 [main] WARN   r.s.S.c.ItemController - Received request with null item
+22.09.2023 13:24:18.306 [main] WARN   r.s.S.c.ItemController - Item with name 'Tea' not found
+22.09.2023 13:24:18.310 [main] INFO   r.s.S.c.ItemController - Created item with ID 1
+22.09.2023 13:24:18.313 [main] INFO   r.s.S.c.ItemController - Deleted item with ID 1
+22.09.2023 13:24:18.317 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found
+22.09.2023 13:24:18.374 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 13:24:18.378 [main] INFO   r.s.S.c.ClientController - Client with ID 1 found
+22.09.2023 13:24:18.382 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 13:24:18.385 [main] WARN   r.s.S.c.ClientController - Received a null client request
+22.09.2023 13:24:18.388 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 13:24:18.391 [main] INFO   r.s.S.c.ClientController - Updated client with ID 1
+22.09.2023 13:24:18.394 [main] INFO   r.s.S.c.ClientController - Deleted client with ID 1
+22.09.2023 13:24:18.398 [main] INFO   r.s.S.c.ClientController - Returned 2 clients
+22.09.2023 13:24:18.401 [main] INFO   r.s.S.c.ClientController - Created client with ID 1
+22.09.2023 13:24:18.476 [main] INFO   r.s.S.c.CoffeeOrderController - Updated coffee order with ID 1
+22.09.2023 13:24:18.481 [main] INFO   r.s.S.c.CoffeeOrderController - Coffee order with ID 1 found
+22.09.2023 13:24:18.495 [main] WARN   r.s.S.c.CoffeeOrderController - Coffee order with ID 1 not found
+22.09.2023 13:24:18.499 [main] WARN   r.s.S.c.CoffeeOrderController - No coffee orders found
+22.09.2023 13:24:18.503 [main] INFO   r.s.S.c.CoffeeOrderController - Deleted coffee order with ID 1
+22.09.2023 13:24:18.516 [main] INFO   r.s.S.c.CoffeeOrderController - Created coffee order with ID: 1
+22.09.2023 13:24:18.521 [main] WARN   r.s.S.c.CoffeeOrderController - Coffee order with ID 1 not found
+22.09.2023 13:24:18.526 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found. Deletion failed.
+22.09.2023 13:24:18.529 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found. Update failed.
+22.09.2023 13:24:18.531 [main] WARN   r.s.S.c.PositionController - Sent body is null
+22.09.2023 13:24:18.534 [main] INFO   r.s.S.c.PositionController - Retrieved 2 positions
+22.09.2023 13:24:18.537 [main] INFO   r.s.S.c.PositionController - Position updated successfully: Position(id=1, name=Owner, description=null)
+22.09.2023 13:24:18.544 [main] INFO   r.s.S.c.PositionController - Position created successfully: Position(id=1, name=Manager, description=null)
+22.09.2023 13:24:18.546 [main] INFO   r.s.S.c.PositionController - Retrieved position by ID: 1
+22.09.2023 13:24:18.549 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found
+22.09.2023 13:24:18.552 [main] INFO   r.s.S.c.PositionController - Position with ID 1 deleted successfully
+22.09.2023 13:24:18.559 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 13:24:18.562 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 13:24:18.568 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+22.09.2023 13:24:55.197 [main] INFO   r.s.S.c.StaffController - Deleted staff member with ID: 1
+22.09.2023 13:24:55.240 [main] INFO   r.s.S.c.StaffController - Retrieved staff by ID: 1
+22.09.2023 13:24:55.250 [main] INFO   r.s.S.c.StaffController - Updated staff member: StaffResponseDTO(id=1, name=Jane, surname=Smith, patronymic=JaneSmith, position=Clerk, phoneNumber=9876543210, address=456 Elm St)
+22.09.2023 13:24:55.271 [main] INFO   r.s.S.c.StaffController - Created staff member: StaffResponseDTO(id=1, name=John, surname=Doe, patronymic=JohnDoe, position=Manager, phoneNumber=1234567890, address=123 Main St)
+22.09.2023 13:24:55.278 [main] INFO   r.s.S.c.StaffController - Retrieved 2 staff members
+22.09.2023 13:24:55.284 [main] WARN   r.s.S.c.StaffController - Staff with ID 1 not found
+22.09.2023 13:24:55.290 [main] WARN   r.s.S.c.StaffController - Sent body is null
+22.09.2023 13:24:55.297 [main] WARN   r.s.S.c.StaffController - Invalid position ID: 999
+22.09.2023 13:24:55.301 [main] WARN   r.s.S.c.StaffController - Invalid position ID: 999
+22.09.2023 13:24:55.307 [main] WARN   r.s.S.c.StaffController - Sent body is null
+22.09.2023 13:24:55.312 [main] WARN   r.s.S.c.StaffController - Staff with ID 1 not found. Deletion failed.
+22.09.2023 13:24:55.318 [main] WARN   r.s.S.c.StaffController - Staff with ID 1 not found. Update failed.
+22.09.2023 13:24:55.323 [main] WARN   r.s.S.c.StaffController - List of staff is empty
+22.09.2023 13:24:55.373 [main] INFO   r.s.S.c.StatusController - Status created successfully: Status(id=1, name=Active)
+22.09.2023 13:24:55.380 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Update failed.
+22.09.2023 13:24:55.384 [main] WARN   r.s.S.c.StatusController - Status doesn't exist. Requested statusId: 1
+22.09.2023 13:24:55.389 [main] WARN   r.s.S.c.StatusController - Status with ID 1 not found. Deletion failed.
+22.09.2023 13:24:55.394 [main] INFO   r.s.S.c.StatusController - Status updated successfully: Status(id=1, name=Active)
+22.09.2023 13:24:55.398 [main] INFO   r.s.S.c.StatusController - Status with ID 1 deleted successfully
+22.09.2023 13:24:55.401 [main] WARN   r.s.S.c.StatusController - Sent body is null
+22.09.2023 13:24:55.406 [main] INFO   r.s.S.c.StatusController - List of statuses sent successfully [Status(id=1, name=Active), Status(id=2, name=Inactive)] 
+22.09.2023 13:24:55.410 [main] INFO   r.s.S.c.StatusController - Requested status Status(id=1, name=Active)
+22.09.2023 13:24:55.606 [main] INFO   o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.sber.SberCoffee.SberCoffeeApplicationTests]: SberCoffeeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22.09.2023 13:24:55.794 [main] INFO   o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.sber.SberCoffee.SberCoffeeApplication for test class ru.sber.SberCoffee.SberCoffeeApplicationTests
+22.09.2023 13:24:56.314 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+22.09.2023 13:24:56.349 [main] INFO   r.s.S.SberCoffeeApplicationTests - Starting SberCoffeeApplicationTests using Java 17.0.6 with PID 14488 (started by dds_s in D:\mospolytech\Java\SberCoffee)
+22.09.2023 13:24:56.351 [main] INFO   r.s.S.SberCoffeeApplicationTests - No active profile set, falling back to 1 default profile: "default"
+22.09.2023 13:24:57.021 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22.09.2023 13:24:57.095 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 6 JPA repository interfaces.
+22.09.2023 13:24:58.182 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22.09.2023 13:24:58.259 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+22.09.2023 13:24:58.262 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+22.09.2023 13:24:58.444 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 13:24:58.467 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22.09.2023 13:24:58.491 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+22.09.2023 13:24:58.872 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6644bdf5
+22.09.2023 13:24:58.876 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+22.09.2023 13:24:59.314 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+22.09.2023 13:25:00.128 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22.09.2023 13:25:00.268 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 13:25:01.148 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22.09.2023 13:25:01.687 [main] INFO   r.s.S.SberCoffeeApplicationTests - Started SberCoffeeApplicationTests in 5.635 seconds (process running for 9.42)
+22.09.2023 13:25:01.798 [main] INFO   r.s.S.c.ItemController - Retrieved item with ID 1
+22.09.2023 13:25:01.802 [main] INFO   r.s.S.c.ItemController - Retrieved item by name: Coffee
+22.09.2023 13:25:01.807 [main] INFO   r.s.S.c.ItemController - Retrieved 2 items successfully
+22.09.2023 13:25:01.811 [main] INFO   r.s.S.c.ItemController - Updated item with ID 1
+22.09.2023 13:25:01.815 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found for deletion
+22.09.2023 13:25:01.819 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found for update
+22.09.2023 13:25:01.823 [main] WARN   r.s.S.c.ItemController - Received request with null item
+22.09.2023 13:25:01.827 [main] WARN   r.s.S.c.ItemController - Item with name 'Tea' not found
+22.09.2023 13:25:01.830 [main] INFO   r.s.S.c.ItemController - Created item with ID 1
+22.09.2023 13:25:01.834 [main] INFO   r.s.S.c.ItemController - Deleted item with ID 1
+22.09.2023 13:25:01.838 [main] WARN   r.s.S.c.ItemController - Item with ID 1 not found
+22.09.2023 13:25:01.893 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 13:25:01.896 [main] INFO   r.s.S.c.ClientController - Client with ID 1 found
+22.09.2023 13:25:01.900 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 13:25:01.903 [main] WARN   r.s.S.c.ClientController - Received a null client request
+22.09.2023 13:25:01.906 [main] WARN   r.s.S.c.ClientController - Client with ID 1 not found
+22.09.2023 13:25:01.909 [main] INFO   r.s.S.c.ClientController - Updated client with ID 1
+22.09.2023 13:25:01.912 [main] INFO   r.s.S.c.ClientController - Deleted client with ID 1
+22.09.2023 13:25:01.916 [main] INFO   r.s.S.c.ClientController - Returned 2 clients
+22.09.2023 13:25:01.920 [main] INFO   r.s.S.c.ClientController - Created client with ID 1
+22.09.2023 13:25:01.977 [main] INFO   r.s.S.c.CoffeeOrderController - Updated coffee order with ID 1
+22.09.2023 13:25:01.983 [main] WARN   r.s.S.c.CoffeeOrderController - Coffee order with ID 1 not found
+22.09.2023 13:25:01.988 [main] WARN   r.s.S.c.CoffeeOrderController - No coffee orders found
+22.09.2023 13:25:01.993 [main] INFO   r.s.S.c.CoffeeOrderController - Deleted coffee order with ID 1
+22.09.2023 13:25:01.999 [main] INFO   r.s.S.c.CoffeeOrderController - Created coffee order with ID: 1
+22.09.2023 13:25:02.005 [main] WARN   r.s.S.c.CoffeeOrderController - Coffee order with ID 1 not found
+22.09.2023 13:25:02.010 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found. Deletion failed.
+22.09.2023 13:25:02.013 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found. Update failed.
+22.09.2023 13:25:02.016 [main] WARN   r.s.S.c.PositionController - Sent body is null
+22.09.2023 13:25:02.021 [main] INFO   r.s.S.c.PositionController - Retrieved 2 positions
+22.09.2023 13:25:02.024 [main] INFO   r.s.S.c.PositionController - Position updated successfully: Position(id=1, name=Owner, description=null)
+22.09.2023 13:25:02.034 [main] INFO   r.s.S.c.PositionController - Position created successfully: Position(id=1, name=Manager, description=null)
+22.09.2023 13:25:02.040 [main] INFO   r.s.S.c.PositionController - Retrieved position by ID: 1
+22.09.2023 13:25:02.043 [main] WARN   r.s.S.c.PositionController - Position with ID 1 not found
+22.09.2023 13:25:02.047 [main] INFO   r.s.S.c.PositionController - Position with ID 1 deleted successfully
+22.09.2023 13:25:02.056 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22.09.2023 13:25:02.058 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22.09.2023 13:25:02.071 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.

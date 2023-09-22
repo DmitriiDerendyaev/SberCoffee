@@ -6,12 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.ApplicationContext;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import ru.sber.SberCoffee.entity.Item;
-import ru.sber.SberCoffee.entity.ItemPrice;
-import ru.sber.SberCoffee.entity.Size;
-import ru.sber.SberCoffee.service.ItemPriceService;
-import ru.sber.SberCoffee.service.ItemService;
-import ru.sber.SberCoffee.service.SizeService;
 
 @SpringBootApplication
 @RequiredArgsConstructor
