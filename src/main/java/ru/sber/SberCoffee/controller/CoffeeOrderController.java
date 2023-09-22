@@ -1,6 +1,8 @@
 package ru.sber.SberCoffee.controller;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ru.sber.SberCoffee.dto.CoffeeOrderRequestDTO;
@@ -15,6 +17,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@Slf4j
 @RestController
 @RequestMapping("/order")
 @RequiredArgsConstructor
@@ -28,7 +31,7 @@ public class CoffeeOrderController {
 
 
     @PostMapping
-    public ResponseEntity<CoffeeOrderResponseDTO> createCoffeeOrder(@RequestBody CoffeeOrderRequestDTO requestDTO) {
+    public ResponseEntity<CoffeeOrderResponseDTO> createCoffeeOrder(@Valid @RequestBody CoffeeOrderRequestDTO requestDTO) {
         if (requestDTO == null) {
             return ResponseEntity.badRequest().build();
         }
@@ -49,6 +52,7 @@ public class CoffeeOrderController {
         CoffeeOrder createdCoffeeOrder = coffeeOrderService.createCoffeeOrder(coffeeOrder);
         CoffeeOrderResponseDTO responseDTO = convertToResponseDTO(createdCoffeeOrder);
 
+        log.info("Created coffee order with ID: {}", responseDTO.getId());
         return ResponseEntity.ok(responseDTO);
     }
 
@@ -56,6 +60,7 @@ public class CoffeeOrderController {
     public ResponseEntity<List<CoffeeOrderResponseDTO>> getAllCoffeeOrders() {
         List<CoffeeOrder> coffeeOrderList = coffeeOrderService.getAllCoffeeOrders();
         if (coffeeOrderList.isEmpty()) {
+            log.warn("No coffee orders found");
             return ResponseEntity.notFound().build();
         }
 
@@ -64,6 +69,7 @@ public class CoffeeOrderController {
                 .map(this::convertToResponseDTO)
                 .collect(Collectors.toList());
 
+        log.info("Returned {} coffee orders", responseDTOList.size());
         return ResponseEntity.ok(responseDTOList);
     }
 
@@ -72,9 +78,11 @@ public class CoffeeOrderController {
         Optional<CoffeeOrder> coffeeOrderOptional = coffeeOrderService.getCoffeeOrderById(id);
 
         if (coffeeOrderOptional.isPresent()) {
+            log.info("Coffee order with ID {} found", id);
             CoffeeOrderResponseDTO responseDTO = convertToResponseDTO(coffeeOrderOptional.get());
             return ResponseEntity.ok(responseDTO);
         } else {
+            log.warn("Coffee order with ID {} not found", id);
             return ResponseEntity.notFound().build();
         }
     }
@@ -103,9 +111,11 @@ public class CoffeeOrderController {
         // Обновляем заказ и преобразуем его в DTO
         CoffeeOrder updatedCoffeeOrder = coffeeOrderService.updateCoffeeOrder(id, coffeeOrder);
         if (updatedCoffeeOrder != null) {
+            log.info("Updated coffee order with ID {}", id);
             CoffeeOrderResponseDTO responseDTO = convertToResponseDTO(updatedCoffeeOrder);
             return ResponseEntity.ok(responseDTO);
         } else {
+            log.warn("Coffee order with ID {} not found", id);
             return ResponseEntity.notFound().build();
         }
     }
@@ -113,8 +123,10 @@ public class CoffeeOrderController {
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteCoffeeOrder(@PathVariable Long id) {
         if (coffeeOrderService.deleteCoffeeOrder(id)) {
+            log.info("Deleted coffee order with ID {}", id);
             return ResponseEntity.noContent().build();
         } else {
+            log.warn("Coffee order with ID {} not found", id);
             return ResponseEntity.notFound().build();
         }
     }
