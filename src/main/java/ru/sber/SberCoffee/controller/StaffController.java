@@ -1,6 +1,8 @@
 package ru.sber.SberCoffee.controller;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +17,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@Slf4j
 @RestController
 @RequestMapping("/staff")
 @RequiredArgsConstructor
@@ -27,6 +30,7 @@ public class StaffController {
     public ResponseEntity<List<StaffResponseDTO>> getAllStaff() {
         List<Staff> staffList = staffService.getAllStaff();
         if (staffList.isEmpty()) {
+            log.warn("List of staff is empty");
             return ResponseEntity.notFound().build();
         }
 
@@ -34,6 +38,7 @@ public class StaffController {
                 .map(this::mapStaffToStaffDTO)
                 .collect(Collectors.toList());
 
+        log.info("Retrieved {} staff members", staffList.size());
         return ResponseEntity.ok(responseDTOList);
     }
 
@@ -42,21 +47,25 @@ public class StaffController {
         Optional<Staff> staffOptional = staffService.getStaffById(id);
 
         if (staffOptional.isPresent()) {
+            log.info("Retrieved staff by ID: {}", id);
             StaffResponseDTO responseDTO = mapStaffToStaffDTO(staffOptional.get());
             return ResponseEntity.ok(responseDTO);
         } else {
+            log.warn("Staff with ID {} not found", id);
             return ResponseEntity.notFound().build();
         }
     }
 
     @PostMapping
-    public ResponseEntity<StaffResponseDTO> createStaff(@RequestBody StaffRequestDTO staffRequestDTO) {
+    public ResponseEntity<StaffResponseDTO> createStaff(@Valid @RequestBody StaffRequestDTO staffRequestDTO) {
         if (staffRequestDTO == null) {
+            log.warn("Sent body is null");
             return ResponseEntity.badRequest().build();
         }
 
         Optional<Position> position = positionService.getPositionById(staffRequestDTO.getPosition());
-        if (position == null) {
+        if (!position.isPresent()) {
+            log.warn("Invalid position ID: {}", staffRequestDTO.getPosition());
             return ResponseEntity.badRequest().build();
         }
 
@@ -71,17 +80,22 @@ public class StaffController {
 
         Staff createdStaff = staffService.createStaff(staff);
         StaffResponseDTO responseDTO = mapStaffToStaffDTO(createdStaff);
+
+        log.info("Created staff member: {}", responseDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(responseDTO);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<StaffResponseDTO> updateStaff(@PathVariable int id, @RequestBody StaffRequestDTO staffRequestDTO) {
+    public ResponseEntity<StaffResponseDTO> updateStaff(@PathVariable int id, @Valid @RequestBody StaffRequestDTO staffRequestDTO) {
         if (staffRequestDTO == null) {
+            log.warn("Sent body is null");
             return ResponseEntity.badRequest().build();
         }
 
         Optional<Position> position = positionService.getPositionById(staffRequestDTO.getPosition());
-        if (position == null) {
+        if (!position.isPresent()) {
+            log.warn("Invalid position ID: {}", staffRequestDTO.getPosition());
+
             return ResponseEntity.badRequest().build();
         }
 
@@ -97,8 +111,10 @@ public class StaffController {
         Staff updatedStaff = staffService.updateStaff(id, newStaff);
         if (updatedStaff != null) {
             StaffResponseDTO responseDTO = mapStaffToStaffDTO(updatedStaff);
+            log.info("Updated staff member: {}", responseDTO);
             return ResponseEntity.ok(responseDTO);
         } else {
+            log.warn("Staff with ID {} not found. Update failed.", id);
             return ResponseEntity.notFound().build();
         }
     }
@@ -107,8 +123,10 @@ public class StaffController {
     public ResponseEntity<Void> deleteStaff(@PathVariable int id) {
         boolean deleted = staffService.deleteStaff(id);
         if (deleted) {
+            log.info("Deleted staff member with ID: {}", id);
             return ResponseEntity.noContent().build();
         } else {
+            log.warn("Staff with ID {} not found. Deletion failed.", id);
             return ResponseEntity.notFound().build();
         }
     }
