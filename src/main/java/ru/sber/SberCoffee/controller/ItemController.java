@@ -11,6 +11,9 @@ import ru.sber.SberCoffee.service.ItemService;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * The type Item controller.
+ */
 @Slf4j
 @RestController
 @RequestMapping("/item")
@@ -19,7 +22,12 @@ public class ItemController {
 
         private final ItemService itemService;
 
-        @GetMapping
+    /**
+     * Gets all items.
+     *
+     * @return the all items
+     */
+    @GetMapping
         public ResponseEntity<List<Item>> getAllItems() {
                 List<Item> itemList = itemService.getAllItems();
                 if (itemList.isEmpty()) {
@@ -31,7 +39,13 @@ public class ItemController {
                 return ResponseEntity.ok(itemList);
         }
 
-        @GetMapping("/{id}")
+    /**
+     * Gets item by id.
+     *
+     * @param id the id
+     * @return the item by id
+     */
+    @GetMapping("/{id}")
         public ResponseEntity<Item> getItemById(@PathVariable Long id) {
                 Optional<Item> itemOptional = itemService.getItemById(id);
 
@@ -44,7 +58,13 @@ public class ItemController {
                 }
         }
 
-        @GetMapping("/search")
+    /**
+     * Gets item by name.
+     *
+     * @param name the name
+     * @return the item by name
+     */
+    @GetMapping("/search")
         public ResponseEntity<Item> getItemByName(@RequestParam String name) {
                 Item item = itemService.getItemByName(name);
 
@@ -57,7 +77,13 @@ public class ItemController {
                 }
         }
 
-        @PostMapping
+    /**
+     * Create item response entity.
+     *
+     * @param item the item
+     * @return the response entity
+     */
+    @PostMapping
         public ResponseEntity<Item> createItem(@Valid @RequestBody Item item) {
                 if (item == null) {
                         log.warn("Received request with null item");
@@ -69,7 +95,14 @@ public class ItemController {
                 return ResponseEntity.ok(createdItem);
         }
 
-        @PutMapping("/{id}")
+    /**
+     * Update item response entity.
+     *
+     * @param id   the id
+     * @param item the item
+     * @return the response entity
+     */
+    @PutMapping("/{id}")
         public ResponseEntity<Item> updateItem(@PathVariable Long id, @Valid @RequestBody Item item) {
                 Item updatedItem = itemService.updateItem(id, item);
 
@@ -82,7 +115,13 @@ public class ItemController {
                 }
         }
 
-        @DeleteMapping("/{id}")
+    /**
+     * Delete item response entity.
+     *
+     * @param id the id
+     * @return the response entity
+     */
+    @DeleteMapping("/{id}")
         public ResponseEntity<Void> deleteItem(@PathVariable Long id) {
                 if (itemService.deleteItem(id)) {
                         log.info("Deleted item with ID {}", id);

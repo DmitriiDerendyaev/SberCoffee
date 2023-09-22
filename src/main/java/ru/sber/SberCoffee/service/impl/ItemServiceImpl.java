@@ -10,6 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * The type Item service.
+ */
 @Service
 @RequiredArgsConstructor
 public class ItemServiceImpl implements ItemService {

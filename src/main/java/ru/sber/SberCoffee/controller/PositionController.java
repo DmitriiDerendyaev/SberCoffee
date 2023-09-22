@@ -12,6 +12,9 @@ import ru.sber.SberCoffee.service.PositionService;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * The type Position controller.
+ */
 @Slf4j
 @RestController
 @RequestMapping("/positions")
@@ -20,6 +23,11 @@ public class PositionController {
 
     private final PositionService positionService;
 
+    /**
+     * Gets all positions.
+     *
+     * @return the all positions
+     */
     @GetMapping
     public List<Position> getAllPositions() {
         List<Position> positions = positionService.getAllPositions();
@@ -31,6 +39,12 @@ public class PositionController {
         return positions;
     }
 
+    /**
+     * Gets position by id.
+     *
+     * @param id the id
+     * @return the position by id
+     */
     @GetMapping("/{id}")
     public ResponseEntity<Position> getPositionById(@PathVariable int id) {
         Optional<Position> position = positionService.getPositionById(id);
@@ -43,6 +57,12 @@ public class PositionController {
         }
     }
 
+    /**
+     * Create position response entity.
+     *
+     * @param position the position
+     * @return the response entity
+     */
     @PostMapping
     public ResponseEntity<Position> createPosition(@Valid @RequestBody Position position) {
         if (position == null) {
@@ -60,6 +80,13 @@ public class PositionController {
         }
     }
 
+    /**
+     * Update position response entity.
+     *
+     * @param id       the id
+     * @param position the position
+     * @return the response entity
+     */
     @PutMapping("/{id}")
     public ResponseEntity<Position> updatePosition(@PathVariable int id, @Valid @RequestBody Position position) {
         Position updatedPosition = positionService.updatePosition(id, position);
@@ -72,6 +99,12 @@ public class PositionController {
         }
     }
 
+    /**
+     * Delete position response entity.
+     *
+     * @param id the id
+     * @return the response entity
+     */
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deletePosition(@PathVariable int id) {
         boolean deleted = positionService.deletePosition(id);

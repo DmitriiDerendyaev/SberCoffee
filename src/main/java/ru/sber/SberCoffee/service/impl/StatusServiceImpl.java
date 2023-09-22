@@ -10,6 +10,9 @@ import ru.sber.SberCoffee.service.StatusService;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * The type Status service.
+ */
 @Service
 @RequiredArgsConstructor
 public class StatusServiceImpl implements StatusService {

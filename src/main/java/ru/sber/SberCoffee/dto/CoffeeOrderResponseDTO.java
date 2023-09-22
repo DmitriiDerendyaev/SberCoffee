@@ -10,6 +10,9 @@ import ru.sber.SberCoffee.entity.Status;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+/**
+ * The type Coffee order response dto.
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

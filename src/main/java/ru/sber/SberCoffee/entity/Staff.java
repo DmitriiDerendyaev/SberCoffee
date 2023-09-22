@@ -8,6 +8,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * The type Staff.
+ */
 @Entity
 @Data
 @AllArgsConstructor

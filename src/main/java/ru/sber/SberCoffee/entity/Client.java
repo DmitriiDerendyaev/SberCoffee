@@ -10,6 +10,9 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
+/**
+ * The type Client.
+ */
 @Entity
 @Data
 @AllArgsConstructor

@@ -11,6 +11,9 @@ import ru.sber.SberCoffee.service.ClientService;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * The type Client controller.
+ */
 @Slf4j
 @RestController
 @RequestMapping("/client")
@@ -19,6 +22,11 @@ public class ClientController {
 
     private final ClientService clientService;
 
+    /**
+     * Get all client response entity.
+     *
+     * @return the response entity
+     */
     @GetMapping
     public ResponseEntity<List<Client>> getAllClient(){
         List<Client> clientList = clientService.getAllClient();
@@ -31,6 +39,12 @@ public class ClientController {
         return ResponseEntity.ok(clientList);
     }
 
+    /**
+     * Get client by id response entity.
+     *
+     * @param id the id
+     * @return the response entity
+     */
     @GetMapping("/{id}")
     public ResponseEntity<Client> getClientById(@PathVariable Long id){
         Optional<Client> clientOptional = clientService.getClientById(id);
@@ -44,6 +58,12 @@ public class ClientController {
         }
     }
 
+    /**
+     * Create client response entity.
+     *
+     * @param client the client
+     * @return the response entity
+     */
     @PostMapping
     public ResponseEntity<Client> createClient(@Valid @RequestBody Client client){
         if(client == null){
@@ -56,6 +76,13 @@ public class ClientController {
         return ResponseEntity.ok(createdClient);
     }
 
+    /**
+     * Update client response entity.
+     *
+     * @param id     the id
+     * @param client the client
+     * @return the response entity
+     */
     @PutMapping("/{id}")
     public ResponseEntity<Client> updateClient(@PathVariable Long id, @Valid @RequestBody Client client){
         if (client == null) {
@@ -73,6 +100,12 @@ public class ClientController {
         }
     }
 
+    /**
+     * Delete client response entity.
+     *
+     * @param id the id
+     * @return the response entity
+     */
     @DeleteMapping("/{id}")
     public ResponseEntity<Client> deleteClient(@PathVariable Long id){
         if (clientService.deleteClient(id)) {

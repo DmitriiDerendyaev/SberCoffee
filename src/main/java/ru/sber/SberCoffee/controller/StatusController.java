@@ -12,6 +12,9 @@ import ru.sber.SberCoffee.service.StatusService;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * The type Status controller.
+ */
 @Slf4j
 @RestController
 @RequestMapping("/status")
@@ -20,6 +23,11 @@ public class StatusController {
 
     private final StatusService statusService;
 
+    /**
+     * Gets all status.
+     *
+     * @return the all status
+     */
     @GetMapping
     public ResponseEntity<List<Status>> getAllStatus() {
         List<Status> statusList = statusService.getAllStatus();
@@ -31,6 +39,12 @@ public class StatusController {
         return ResponseEntity.ok(statusList);
     }
 
+    /**
+     * Gets status by id.
+     *
+     * @param id the id
+     * @return the status by id
+     */
     @GetMapping("/{id}")
     public ResponseEntity<Status> getStatusById(@PathVariable int id) {
         Optional<Status> statusOptional = statusService.getStatusById(id);
@@ -44,6 +58,12 @@ public class StatusController {
         }
     }
 
+    /**
+     * Create status response entity.
+     *
+     * @param status the status
+     * @return the response entity
+     */
     @PostMapping
     public ResponseEntity<Status> createStatus(@Valid @RequestBody Status status) {
         if (status == null) {
@@ -61,6 +81,13 @@ public class StatusController {
         }
     }
 
+    /**
+     * Update status response entity.
+     *
+     * @param id     the id
+     * @param status the status
+     * @return the response entity
+     */
     @PutMapping("/{id}")
     public ResponseEntity<Status> updateStatus(@PathVariable int id,@Valid @RequestBody Status status) {
         Status updatedStatus = statusService.updateStatus(id, status);
@@ -74,6 +101,12 @@ public class StatusController {
         }
     }
 
+    /**
+     * Delete status response entity.
+     *
+     * @param id the id
+     * @return the response entity
+     */
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteStatus(@PathVariable int id) {
         boolean deleted = statusService.deleteStatus(id);
