@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"ru.sber.SberCoffee"},{"l":"ru.sber.SberCoffee.controller"},{"l":"ru.sber.SberCoffee.dto"},{"l":"ru.sber.SberCoffee.entity"},{"l":"ru.sber.SberCoffee.handler"},{"l":"ru.sber.SberCoffee.repository"},{"l":"ru.sber.SberCoffee.service"},{"l":"ru.sber.SberCoffee.service.impl"}];updateSearchResults();
