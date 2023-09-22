@@ -41,7 +41,7 @@ public class CoffeeOrderController {
         coffeeOrder.setItem(itemService.getItemById(requestDTO.getItem()).orElse(null));
         coffeeOrder.setQuantity(requestDTO.getQuantity());
         coffeeOrder.setStatus(statusService.getStatusById(requestDTO.getStatus()).orElse(null));
-        coffeeOrder.setStaff(staffService.getStaffById(requestDTO.getStatus()).orElse(null));
+        coffeeOrder.setStaff(staffService.getStaffById(requestDTO.getStaff()).orElse(null));
 
         coffeeOrder.setStartTime(LocalDateTime.now());
         double price = coffeeOrder.getItem().getPrice();
@@ -134,13 +134,13 @@ public class CoffeeOrderController {
     private CoffeeOrderResponseDTO convertToResponseDTO(CoffeeOrder coffeeOrder) {
         CoffeeOrderResponseDTO responseDTO = new CoffeeOrderResponseDTO();
         responseDTO.setId(coffeeOrder.getId());
-        responseDTO.setClient(coffeeOrder.getClient()); // Пример, предполагается, что у вас есть методы доступа к полям в CoffeeOrder
-        responseDTO.setItem(coffeeOrder.getItem()); // Пример
-        responseDTO.setQuantity(coffeeOrder.getQuantity()); // Пример
-        responseDTO.setStatus(coffeeOrder.getStatus()); // Пример
-        responseDTO.setStaff(mapStaffToStaffDTO(coffeeOrder.getStaff())); // Пример
-        responseDTO.setStartTime(coffeeOrder.getStartTime()); // Пример
-        responseDTO.setTotal(coffeeOrder.getTotal()); // Пример
+        responseDTO.setClient(coffeeOrder.getClient());
+        responseDTO.setItem(coffeeOrder.getItem());
+        responseDTO.setQuantity(coffeeOrder.getQuantity());
+        responseDTO.setStatus(coffeeOrder.getStatus());
+        responseDTO.setStaff(mapStaffToStaffDTO(coffeeOrder.getStaff()));
+        responseDTO.setStartTime(coffeeOrder.getStartTime());
+        responseDTO.setTotal(coffeeOrder.getTotal());
         return responseDTO;
     }
 
