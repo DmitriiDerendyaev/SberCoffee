@@ -1509,3 +1509,33 @@ java.lang.NullPointerException: Cannot invoke "ru.sber.SberCoffee.entity.Staff.g
 22.09.2023 13:25:02.056 [SpringApplicationShutdownHook] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 22.09.2023 13:25:02.058 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
 22.09.2023 13:25:02.071 [SpringApplicationShutdownHook] INFO   c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+23.09.2023 20:18:14.035 [background-preinit] INFO   o.h.v.i.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+23.09.2023 20:18:14.105 [main] INFO   r.s.S.SberCoffeeApplication - Starting SberCoffeeApplication using Java 17.0.6 with PID 11184 (D:\mospolytech\Java\SberCoffee\target\classes started by dds_s in D:\mospolytech\Java\SberCoffee)
+23.09.2023 20:18:14.107 [main] INFO   r.s.S.SberCoffeeApplication - No active profile set, falling back to 1 default profile: "default"
+23.09.2023 20:18:15.166 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23.09.2023 20:18:15.258 [main] INFO   o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 81 ms. Found 6 JPA repository interfaces.
+23.09.2023 20:18:16.412 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+23.09.2023 20:18:16.424 [main] INFO   o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23.09.2023 20:18:16.427 [main] INFO   o.a.c.c.StandardService - Starting service [Tomcat]
+23.09.2023 20:18:16.427 [main] INFO   o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+23.09.2023 20:18:16.531 [main] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+23.09.2023 20:18:16.532 [main] INFO   o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2342 ms
+23.09.2023 20:18:16.743 [main] INFO   o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+23.09.2023 20:18:16.854 [main] INFO   o.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+23.09.2023 20:18:16.858 [main] INFO   o.h.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+23.09.2023 20:18:17.075 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23.09.2023 20:18:17.295 [main] INFO   o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+23.09.2023 20:18:17.318 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Starting...
+23.09.2023 20:18:17.563 [main] INFO   c.z.h.p.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@750cd36d
+23.09.2023 20:18:17.566 [main] INFO   c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+23.09.2023 20:18:18.075 [main] INFO   o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+23.09.2023 20:18:19.160 [main] INFO   o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23.09.2023 20:18:19.366 [main] INFO   o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23.09.2023 20:18:19.984 [main] WARN   o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23.09.2023 20:18:20.402 [main] INFO   o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23.09.2023 20:18:20.430 [main] INFO   o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+23.09.2023 20:18:20.445 [main] INFO   r.s.S.SberCoffeeApplication - Started SberCoffeeApplication in 6.879 seconds (process running for 9.011)
+23.09.2023 20:19:53.126 [http-nio-8080-exec-2] INFO   o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23.09.2023 20:19:53.127 [http-nio-8080-exec-2] INFO   o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23.09.2023 20:19:53.130 [http-nio-8080-exec-2] INFO   o.s.w.s.DispatcherServlet - Completed initialization in 3 ms
+23.09.2023 20:19:53.450 [http-nio-8080-exec-2] INFO   r.s.S.c.CoffeeOrderController - Returned 1 coffee orders
