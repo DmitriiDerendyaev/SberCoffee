@@ -35,13 +35,14 @@ public class ClientController {
     public ResponseEntity<Client> getClientById(@PathVariable Long id){
         Optional<Client> clientOptional = clientService.getClientById(id);
 
-        if(clientOptional.isPresent()){
-            log.info("Client with ID {} found", id);
-            return ResponseEntity.ok(clientOptional.get());
-        } else {
+        if(clientOptional.isEmpty()) {
             log.warn("Client with ID {} not found", id);
             return ResponseEntity.notFound().build();
         }
+
+        log.info("Client with ID {} found", id);
+        return ResponseEntity.ok(clientOptional.get());
+
     }
 
     @PostMapping
